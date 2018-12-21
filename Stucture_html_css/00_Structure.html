@@ -1,0 +1,141 @@
+<!DOCTYPE html><!-- DOCTYPE est la premiere balise obligatoire dans une page HTML :elle designe le type de document pour le navigateur, ici .HTML-->
+<html lang="fr"> <!--désigne la langue utilisée du côté utilisateur-->
+<head> 
+   <!--la balise HEAD contient des parametres de la page html qui sont invisibles pour l'utilisateur (internaute)--> 
+   <meta charset="UTF-8"> <!--encodage des caractères pour la gestion de l'affichage des caracteres speciaux-->
+   <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+   <!--controler la mise en page sur les navigateurs mobiles ici le 1.0 signifie qu'il n'y a pas de zoom-->
+   <meta http equiv="X-UA-Compatible" content="ie=edge">
+   <!--compatibilité avec le navigateur Edge-->
+   <meta name="description" content= "ma premiere page en HTML">
+    <!--description sous le site dans la recherche de google--> 
+    <meta name="author" content="Sylvain">  <!--nom de l'auteur du site-->
+   <title>Ma premiere page en HTML</title> <!--Titre de la page qui s'affiche en titre de l'onglet--> 
+   <link rel="stylesheet" href="css/01_index.css"> <!--relie le fichier HTML au fichier de mise en forme CSS (cascading style sheet) littéralement
+feuille de style-->
+<link rel="stylesheet" href=https://fonts.googleapis.com/css"?family=indie+Flower">
+   <!--Lien pour les polices utilisées ici via Google font-->
+
+</head>
+<body>
+<!--Corps (contenu) de la page-->    
+<!--tout ce qui sera affiché à l'écran s'écrit à l'intérieurdes balises ouvrantes et fermantes BODY -->
+C'est ma première page web! Le navigateur affiche le texte, les images ... contenus dans le bloc de ma balise &lt;body> 
+<!-- &lt; permet d'afficher ma balise html dans le navigateur, si je mets un chevron normalement ma balise sera interprétée par le navigateur-->
+<!--Les Titres-->
+<h1>Titre h1</h1><!--un seul h1 par page -->
+<h2>Titre h2</h2>
+<h3>Titre h3</h3>
+<h4>Titre h4</h4>
+<h5>Titre h5</h5>
+<h6>Titre h6</h6>
+
+<p>Ceci est un paragraphe</p>
+<p>Les paragraphes sont des délimités par la balise &lt;p>.</p>
+
+<!--Paragraphe préformaté-->
+<pre>Les numeriques de Vitry 2018/2019</pre>
+<p> Les numeriques de Vitry 2018/2019</p>
+
+<!--Les retours à la ligne-->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eveniet accusamus dignissimos suscipit consequatur temporibus eligendi praesentium hic culpa ipsa. Voluptatibus 
+debitis quia doloremque sit eius dicta asperiores fuga. Debitis!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Autem voluptates nam veritatis ipsum error. Repudiandae est maiores cumque <br/>ipsum non quas recusandae architecto 
+    quam, praesentium, possimus mollitia in modi aperiam?</p>
+
+<!--La disposition-->
+<p style="text-align:right">Ce paragraphe sur deux<br/>lignes est disposé à droite.</p>
+<p style="text-align:center">Ce paragraphe sur deux<br/>lignes est disposé au centre.</p>
+<p style="text-align:left">Ce paragraphe sur deux<br/>lignes est disposé à gauche.</p>
+
+<p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nisi itaque doloribus obcaecati ut id deleniti quidem<br/> illo blanditiis iure 
+et provident doloremque aspernatur, odit ducimus perferendis sequi placeat quisquam?</p>Ce paragraphe est justifié : aligné a droite et a gauche.
+
+<p>
+    Voici la structure de base d'une page HTML:<br/>
+    &lt;!DOCTYPE html><br/>
+    &lt;html><br/>
+    &lt;head><br/>
+    &lt;title>&lt;/title><br/>
+    &lt;/head><br/>
+    &lt;body><br/><br/>
+    &lt;/body><br/><br/>
+    &lt;/html><br/>
+</p>
+
+<p>
+    Quel est le rôle de la balise &lt;hr/> 
+<hr/>
+<p>
+    Elle insère une ligne séparatrice en html. <br/> Elle est auto- fermante (ou orpheline)...
+    à ne pas confondre avec la balise &lt;br/> et effectué un retour à la ligne
+</p>
+
+<p>
+    Bonjour, ceci est mon premier fichier en html alors <strong> soyez indulgents</strong> SVP!
+</p>
+
+<p>
+    Bonjour, ceci est mon premier fichier en html alors <em> soyez indulgents</em> SVP!
+</p>
+<!-- MARK fait ressortir visuellement la portion de texte selectionné-->
+<p>
+    Bonjour ceci est mon premier fichier en html alors <mark>soyez indulgents SVP!</mark>
+</p>
+
+<!--Les listes-->
+
+<!--Non ordonnée (à puces)-->
+
+<ul>
+    <li>Chat</li>
+    <li>Chien</li>
+    <li>Cheval</li>
+    <LI>Lapin</LI>
+</ul>
+
+<!--Ordonnée (numérotée)-->
+
+<ol>
+    <li>Chat</li>
+    <li>Chien</li>
+    <li>Cheval</li>
+    <li>Lapin</li>
+</ol>
+
+<!--Les couleurs-->
+
+    <p style="color:crimson">H</p>
+    <p style="color:lightseagreen">T</p>
+    <p style="color:darkgreen">M</p>
+    <p style="color:navy">L</p>
+    <br />
+    <p style="color:#dc143c">H</p>
+    <p style="color:#20b2aa">T</p>
+    <p style="color:#006400">M</p>
+    <p style="color:#000080">L</p>
+
+<!--La couleur de fond-->
+
+    <p style="background-color:cyan">Bonjour</p>
+    <p style="background-color:pink">Hello</p>
+    <p style="background-color:black; color:yellow">Bongiorno</p>
+
+<!--Les liens-->
+    <!--Pour charger un fichier-->  
+        <link rel="stylesheet" href="css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="css/nav_footer.css" type="text/css" />
+        <link rel="stylesheet" href="css/style_content.css" type="text/css" />
+        <!-- Pour accéder à une URL (site web) -->
+        <a href="http://colorhunt.co/">Site web color hunt</a>
+
+<!--Les images-->        
+
+<img src="images/bengal.jpg">
+<img src="Images/image.jpg">
+
+
+
+
+</body>
+</html>
