@@ -1,0 +1,42 @@
+*{ /*L'étoile selectionne tous les éléments de ma page html*/
+    font-family: fantasy; /*choix d'une police*/ 
+}
+body{
+    width: 50%; /*Largeur de ma page 50% de l'écran*/
+    margin: auto; /*Gestion automatique des marges pour que mon tableau soit centré*/
+}
+table{
+    border: 4px solid white; /* bordure: 3 valeurs,épaisseur, type de trait, couleur*/
+    border-collapse: collapse; /*par defaut la bordure contient 2 traits, pour que le trait soit unique on utilise la propriété "collapse" */
+    width: 90%; /*largeur du tableau par rapport a son contenant donc ici le body /!\ ne pas oublier la regle de l'héritage en css*/
+    margin: 25px; 
+}
+thead, tfoot{ 
+    background-color: rgb(218, 248, 218);
+    border: 2px solid;
+}
+tbody{
+    border: 1px solid black;
+}
+
+th{
+    border: 1px dotted rgb(117, 0, 128); /*dotted = pointillés*/
+    padding: 1px; /*le padding est une marge intérieur*/
+    background-color: grey;
+    width: 25%;
+}
+td{
+    border: 1px dotted #6a5acd;
+    text-align: center;
+    padding:5px; /*padding =marge intérieur*/
+}
+td:first-child{ /*1er td pour aligner le texte à gauche de la première cellule de chaque rangée*/
+    text-align: left;
+    background-color: white;
+}
+tr:first-child, tr :nth-child(3){
+    background-color: grey;
+}
+/* {
+    background-color: grey; 
+} */
