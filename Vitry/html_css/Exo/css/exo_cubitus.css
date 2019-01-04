@@ -1,5 +1,5 @@
 .boite1{
-    background: linear-gradient(to left, green); /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
+    background: linear-gradient(to left, green, green); /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
     qui effectue de gauche a droite*/
     width: 10em; /*largeur*/
     height: 10em; /*hauteur*/
@@ -8,7 +8,7 @@
     /* border:1px solid red; */
 }
 .boite2{
-    background: linear-gradient(to left, rgb(65, 207, 176),green); /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
+    background: linear-gradient(to left, rgb(0, 60, 128),rgb(0, 60, 128)); /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
     qui effectue de gauche a droite*/
     width: 10em; /*largeur*/
     height: 10em; /*hauteur*/
