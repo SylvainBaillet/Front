@@ -18,11 +18,10 @@ thead, tfoot{
 tbody{
     border: 1px solid black;
 }
-
 th{
     border: 1px dotted rgb(117, 0, 128); /*dotted = pointillés*/
     padding: 1px; /*le padding est une marge intérieur*/
-    background-color: grey;
+    background-color: white;
     width: 25%;
 }
 td{
@@ -30,11 +29,7 @@ td{
     text-align: center;
     padding:5px; /*padding =marge intérieur*/
 }
-td:first-child{ /*1er td pour aligner le texte à gauche de la première cellule de chaque rangée*/
-    text-align: left;
-    background-color: white;
-}
-tr:first-child, tr :nth-child(3){
+tr:nth-child(odd){
     background-color: grey;
 }
 /* {

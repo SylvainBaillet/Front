@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/07_bis_float.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>Le 07_bis_float
+        =>Notion de flux
+        <hr>
+        Le flux d'un document pourrait se définir comme étant le comportement naturel d'affichage des éléments d'une page web, autrement dit, les éléments se succedent dans l'ordre ou ils sont déclarés dans le code HTML.
+        De façon simpliste, les éléments de séquençage tels que "hi, "p", ou "ul" s'affichent logiquement par défault les uns en dessous des autres tandis que les éléments delimitant pour la plupart des portions de textes (mise en italique d'un ou plusieurs mots pas ex) s'affichent côte à côte <br>
+        Maintenant que nous avons évoqué ce point il faut comprendre que les balises  HTML ont toutes par defaut des propriétés de rendu CSS particulieres. En fait, il existe initialement deux grands groupes principaux de balises: <mark> les balises de rendu CSS  "bloc" (block) </mark> et <mark> les balises de rendu CSS "en-ligne" (inline)
+        </mark> Ces valeurs de rendu visuel cïncident generalement par defaut avec le groupe d'appartenance HTML <br>
+        Des propriétés CSS d'un élément (diplay: block, inline, list-item, inline-block,table, table-cell,....) decoulent des specificités d'affichage, son positionnement dans le flux <br>
+        Il est possible de sortir du flux naturel  un ou plusieurs elements pour modifier leur affichage avec
+        Nos deux groupes d'éléments peuvent être classés en deux familles: 
+        <mark><strong> les éléments de type block (h1, p, ul, ol, dl, table, blockquote etc...)</strong></mark>
+        <mark><strong> Les éléments de type inline (a, img, strong, abbr, etc...)</strong></mark>
+        <br>
+        <hr>
+    </p>
+        <p>
+            Le type "Block"
+            <br>
+            Les elements de rendu CSS block se placent toujours l'un en dessous de l'autre par defaut (comme un retour a la ligne.) par exemple, une suite de paragraphes (balises <p>.) par ailleurs un élément "bloc" occupe automatiquement, par defaut, des proprietés telles que "width", "height", "min-width"<br>
+                de plus un élément de type "block" peut contenir d'autres éléments de type block ainsi que des éléments de type inline.
+        <mark>A RETENIR</mark>
+        un élément de type "block" se differencie des éléments de type inline (en ligne)
+        sur differents points, dont ceux ci:
+        <ul>
+            <li>il occupe l'entiereté de la largeur de son conteneur</li>
+            <li>il permet l'attribution de marges verticales</li>
+            <li>il permet la modification de sa hauteur et de sa largeur</li>
+        </ul>
+        Le premier point est primordial, nous utiliserons abondamment ce comportement par defaut bien pratique dans la création de nos mise en page. Notyons également que tout élément peut être "reclassé" dans la famille opposée grace à la proprieté display (que nous verrons plus tard).</p>
+        <p>Le type "inline" <br>
+        Les éléments de rendu "inlineé se placent toujours l'un à coté de l'autre afin de rester dans le texte (par exemple: la balise "strong", "img", "a", "span")
+        Par defaut, il n'est pas prévu qu'ils puissent se positionner sur la page (meme si cela est possible) ni de leur donner des dimensions (hauteur, largeur, profondeur)
+        leur taille va être determinée par le texte ou l'élément:image qu'ils contiennent.
+        Référence: "http://fr.learnlayout.com/toc.html"(en français)  
+        <br>
+        La proprieté CSS FLOAT permet de faire flotter des éléments côte à côte, donc de modifier le comportement naturellement de type block en comportement inline. A l'origine le float est prévu pour entourer une image avec du texte (paragraphe).
+        
+
+
+        </p>
+
+
+        
+
+    
+
+
+    
+</body>
+</html>

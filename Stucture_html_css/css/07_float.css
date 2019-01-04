@@ -1,0 +1,78 @@
+body{
+    margin: 0 auto;
+    background-color: azure;
+}
+
+div{
+    width: 90%;
+    margin: 0 auto;
+    background-color: mistyrose;
+}
+.boite{
+    height: 11vh;
+    width: 18vh;
+    padding: 5vh;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQshrgdAxZOU1jT4_o0OmlINTvjlBRO-WXt7PCGvnT8y-FgMRK9Q)no-repeat; 
+    /* background-repeat: no repeat */
+    border: 5px double orchid;  /* taille, style, couleur de bordure */
+    margin: 2vh;
+    float: left; /*effet flottant, permet de placer des balises côte à côte alors que selon le flux du web standard les éléments se placent les uns au dessous des autres*/
+    transition: margin 0.5s;
+    }
+    .boite:hover{/*la pseudo class : hover modifie un affichage au survol de la souris*/
+        margin-top: 10vh;
+}
+.clear{
+    clear: both; /*supprime l'effet flottant*/
+}
+p{
+    background-color: aquamarine;
+}
+p span{ /*selectionne les "span" contenus dans les "p"*/
+    background-color: yellow;
+    color: pink;
+}
+.boite2 {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(65, 28, 167);
+}
+.box{
+    height: 11vh;
+    width: 18vh;
+    padding: 5vh;
+    background: url(https://whc.unesco.org/uploads/thumbs/site_1469_0011-750-0-20180706121932.jpg)no-repeat;
+    border: 5px double orchid;  /* taille, style, couleur de bordure */
+    margin: 2vh;
+    float: left; /*effet flottant, permet de placer des balises côte à côte alors que selon le flux du web standard les éléments se placent les uns au dessous des autres*/
+    transition: margin 0.5s;
+    border-radius: 50%;
+    }
+    .box:hover{/*la pseudo class : hover modifie un affichage au survol de la souris*/
+        margin-top: 10vh;
+    }
+.clear{
+    clear: both; /*supprime l'effet flottant*/
+}
+.boite3 {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(65, 28, 167);
+}
+.box2{
+    height: 11vh;
+    width: 18vh;
+    padding: 5vh;
+    background: url(https://whc.unesco.org/uploads/thumbs/site_1469_0011-750-0-20180706121932.jpg)no-repeat;
+    border: 5px double orchid;  /* taille, style, couleur de bordure */
+    margin: 2vh;
+    float: left; /*effet flottant, permet de placer des balises côte à côte alors que selon le flux du web standard les éléments se placent les uns au dessous des autres*/
+    transition: margin 0.5s;
+    border-radius: 10%;
+    }
+    .box:hover{/*la pseudo class : hover modifie un affichage au survol de la souris*/
+        margin-top: 10vh;
+    }
+.box3{to right
+
+}

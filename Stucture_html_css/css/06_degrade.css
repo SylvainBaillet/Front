@@ -1,0 +1,32 @@
+.contenu{
+    background: linear-gradient(to left, rgb(167, 65, 207), rgb(39, 39, 158)); /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
+    qui effectue de gauche a droite*/
+    width: 45em; /*largeur*/
+    height: 45em; /*hauteur*/
+    margin: 0 auto; /*pas de marge (valeur 0) en haut et en bas - la valeur auto laisse au navigateur centrer l'élement*/
+    border-radius: 50%; /*la proprieté BORDER RADIUS permet d'arrondir plus ou moins les angles*/
+    /* border:1px solid red; */
+}
+.contenu1{
+    background: linear-gradient(to right, rgb(65, 207, 176), rgb(207, 117, 32)); /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
+    qui effectue de gauche a droite*/
+    width: 45em; /*largeur*/
+    height: 45em; /*hauteur*/
+    margin: 0 auto; /*pas de marge (valeur 0) en haut et en bas - la valeur auto laisse au navigateur centrer l'élement*/
+    border-radius: 50%; /*la proprieté BORDER RADIUS permet d'arrondir plus ou moins les angles*/
+}
+.contenu2{
+    background: linear-gradient(to right, rgb(207, 117, 32), rgb(green)); 
+    width: 45em; /*largeur*/
+    height: 45em; /*hauteur*/
+    margin: 0 auto; 
+    border-radius: 70%; 
+}
+.contenu3{
+    background: linear-gradient (rgb(65, 207, 176), rgb(207, 117, 32), #ff2e63);
+    width: 45em;
+    height: 45em; /*hauteur*/
+    margin: 0 auto; 
+    border-radius: 30%; 
+}
+
