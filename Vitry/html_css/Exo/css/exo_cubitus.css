@@ -1,45 +1,61 @@
-.boite1{
-    background: linear-gradient(to left, green, green); /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
+.vert{
+    border: 2px solid black;
+    background: green; /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
     qui effectue de gauche a droite*/
     width: 10em; /*largeur*/
     height: 10em; /*hauteur*/
     margin: 0 auto; /*pas de marge (valeur 0) en haut et en bas - la valeur auto laisse au navigateur centrer l'élement*/
-    border-radius: 5% 10% 15% 20%; /*la proprieté BORDER RADIUS permet d'arrondir plus ou moins les angles*/
+    border-radius: 5% 10% 15% 20%;
+    float: left;
+     /*la proprieté BORDER RADIUS permet d'arrondir plus ou moins les angles*/
     /* border:1px solid red; */
 }
-.boite2{
-    background: linear-gradient(to left, rgb(0, 60, 128),rgb(0, 60, 128)); /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
+.bleu{
+    border: 2px solid black;
+    background: rgb(0, 60, 128); /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
     qui effectue de gauche a droite*/
     width: 10em; /*largeur*/
     height: 10em; /*hauteur*/
     margin: 0 auto; /*pas de marge (valeur 0) en haut et en bas - la valeur auto laisse au navigateur centrer l'élement*/
-    border-radius: 20% 0% 20% 0%; /*la proprieté BORDER RADIUS permet d'arrondir plus ou moins les angles*/
+    border-radius: 20% 0% 20% 0%;
+    float: left; /*la proprieté BORDER RADIUS permet d'arrondir plus ou moins les angles*/
 }
-.boite3{
-    background: linear-gradient(to left, rgb(207, 117, 32), rgb(green)); 
-    width: 45em; /*largeur*/
-    height: 45em; /*hauteur*/
+.cyan{
+    border: 2px solid black;
+    background: rgb(0, 255, 191); 
+    width: 10em; /*largeur*/
+    height: 10em; /*hauteur*/
     margin: 0 auto; 
-    border-radius: 70%; 
+    border-radius: 50%; 
+    float: left;
 }
-.boite4{
-    background: linear-gradient (rgb(65, 207, 176), rgb(207, 117, 32), #ff2e63);
-    width: 45em;
-    height: 45em; /*hauteur*/
+.saumon{
+    border: 2px solid black;
+    background: rgb(240, 126, 126);
+    width: 10em;
+    height: 10em; /*hauteur*/
+    margin: 0 auto; 
+    border-radius: 10% 20% 10% 20%; 
+    float: left;
+}
+.rouge{
+    border: 2px solid black;
+    background: rgb(255, 0, 0);
+    width: 10em;
+    height: 10em; /*hauteur*/
+    margin: 0 auto; 
+    border-radius: 10% 20% 10% 20%; 
+    float: left;
+}
+.blanc{
+    border: 2px solid white;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    width: 10em;
+    height: 10em; /*hauteur*/
     margin: 0 auto; 
     border-radius: 30%; 
+    float: left;
 }
-.boite5{
-    background: linear-gradient (rgb(65, 207, 176), rgb(207, 117, 32), #ff2e63);
-    width: 45em;
-    height: 45em; /*hauteur*/
-    margin: 0 auto; 
-    border-radius: 30%; 
-}
-.boite6{
-    background: linear-gradient (rgb(65, 207, 176), rgb(207, 117, 32), #ff2e63);
-    width: 45em;
-    height: 45em; /*hauteur*/
-    margin: 0 auto; 
-    border-radius: 30%; 
+.clear{
+    clear: both; /*supprime l'effet flottant*/
 }
