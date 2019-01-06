@@ -1,0 +1,13 @@
+.jaune{
+    border: 2px solid rgb(255, 255, 255);
+    background: #f89d13; /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
+    qui effectue de gauche a droite*/
+    width: 5em; /*largeur*/
+    height: 5em; /*hauteur*/
+    margin: 0 auto; /*pas de marge (valeur 0) en haut et en bas - la valeur auto laisse au navigateur centrer l'élement*/
+     /*la proprieté BORDER RADIUS permet d'arrondir plus ou moins les angles*/
+    /* border:1px solid red; */
+}
+.clear{
+    clear: both; /*supprime l'effet flottant*/
+}

@@ -1,6 +1,6 @@
-.vert{
+.jaune{
     border: 2px solid black;
-    background: green; /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
+    background: #f89d13; /*degradé qui demarre avec la premiere couleur et finit avec la seconde de haut en bas par defaut, mais ici on a adjoint TO LEFT 
     qui effectue de gauche a droite*/
     width: 10em; /*largeur*/
     height: 10em; /*hauteur*/
