@@ -32,7 +32,7 @@ p span{ /*selectionne les "span" contenus dans les "p"*/
     background-color: yellow;
     color: pink;
 }
-.boite2 {
+.bleu {
     width: 90%;
     margin: 0 auto;
     background-color: rgb(65, 28, 167);
@@ -54,7 +54,7 @@ p span{ /*selectionne les "span" contenus dans les "p"*/
 .clear{
     clear: both; /*supprime l'effet flottant*/
 }
-.boite3 {
+.cyan {
     width: 90%;
     margin: 0 auto;
     background-color: rgb(65, 28, 167);
