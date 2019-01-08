@@ -1,67 +1,100 @@
-#conteneur{
-   width: 960px;
-   background: paleturquoise;
-   color: white;
-   margin: 0 auto;
-    text-align: center;
-}
-header{
-   background-color: tan;
-   height: 60px;
-   line-height: 60px;
-}
-nav{
-   background-color: darkgray;
-   height: 30px;
-   line-height: 30px;
-   text-align: center;
-}
-section{
-   background-color: gray;
-   margin: 10px;
-   height: 500px;
-}
-.rectangle1, .rectangle2, .rectangle3, .rectangle4{
-   width: 468px;
-   height: 248px;
-   border: 1px solid;
-   float: left;
-}
-.rec1{
-   border: 1px solid;
-   float: left;
-   height: 122px;
-   width: 232px;
-   line-height: 122px;
-   background-color: rgb(103, 66, 121);
-}
-.rec2{
-   border: 1px solid;
-   float: left;
-   height: 122px;
-   width: 232px;
-   line-height: 122px;
-   background-color: rgb(76, 219, 207);
-}
-.rec3{
-   border: 1px solid;
-   float: left;
-   height: 122px;
-   width: 232px;
-   line-height: 122px;
-      background-color: orchid;
-}
-.rec4{
-   border: 1px solid;
-   float: left;
-   height: 122px;
-   width: 232px;
-   line-height: 122px;
-   background-color: olive;
-}
-
-footer{
-   background-color: #4a1a2c;
-   height: 100px;
-   margin: 20px auto;
+#conteneur  { 
+   background:#336699;    
+   height: 600px;    
+   margin: 0 auto; 
+   width: 800px;}
+header{ 
+background: #ff5555;    
+width: 800px;   
+height: 70px;   
+line-height: 70px;  }
+.gauche{ 
+background
+: 
+#5585ff
+; 
+width
+: 
+150px
+; 
+height
+: 
+530px
+;  
+float
+: 
+left
+;    
+line-height
+: 
+530px
+;  }
+.droite{    
+background
+: 
+#5585ff
+;    
+width
+: 
+150px
+; 
+height
+: 
+530px
+;    
+float
+: 
+left
+;    
+line-height
+: 
+530px
+;  }
+.milieu  {    
+background
+: 
+#55d87c
+;    
+float
+: 
+left
+;    
+height
+: 
+450px
+;    
+line-height
+: 
+530px
+;    
+width
+: 
+500px
+;  }
+.z_milieu  {    
+border
+: 
+1px
+solid
+;    
+float
+: 
+left
+;    
+height
+: 
+448px
+;    
+width
+: 
+98px
+;  }
+.bas  {    
+background:gold;    
+bottom: 80px;    height: 80px;    
+line-height: 80px;    
+left: 150px;    
+position: relative;    
+width: 500px;  }
+.clear{ clear: both;
 }
