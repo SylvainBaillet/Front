@@ -5,33 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/exo_zoning.css">
-    <title>Document</title>
+    <title>exo_zoning</title>
 </head>
     <body>
     
-        <div id="conteneur"> <!-- c'est la boite on va poser tous nos éléments, header,
-            nav, milieu, footer-->
+        <div id="conteneur"> <!-- c'est la boite on va poser notre zoning,tous nos éléments, header, nav, milieu, footer-->
             <header>
                 <p>Zone du haut</p>
             </header>
             <div class="gauche">
                 <p>Zone de gauche</p>
             </div>
-            <div class>
-                <div class="rectanglerose"></div>
-                <div class="rectanglegris"></div>
-                <div class="rectanglemarron"></div>
-                <div class="rectanglebeige"></div>
-                <div class="rectanglebeige"></div>
-            </div>
-            <div>
-                <p>Zone de droite</p>
+            <div class="milieu">
+                <div class="z_milieu">
+                    Z1
                 </div>
-                <div class="clear"></div>
+                <div class="z_milieu">
+                    Z2
+                </div>
+                <div class="z_milieu">
+                    Z3
+                </div>
+                <div class="z_milieu">
+                    Z4
+                </div>
+                <div class="z_milieu">
+                    Z5
+                </div>
+            </div>
+            <div class="droite">
+                <p>Zone de droite</p>
+            </div>
+            <div class="clear"></div>
     
-            <footer>
+            <div class="bas">
                 <p>Zone du bas</p>
-            </footer>
+            </div>
+            <div class="clear"></div> 
+            <!--cette derniere class clear, ici semble ne pas servir si on l'enleve, a voir si on la garde et à quoi elle sert-->
         </div>
     </body>
 </html>

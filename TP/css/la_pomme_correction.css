@@ -1,0 +1,38 @@
+body{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    background: white;
+    font-family: 'PT Sans', sans-serif;
+}
+div#conteneur{
+     width:770px;  /*largeur*/
+     margin: 0 auto; /*marge automatique qui centre le bloc apres l'avoir remonté le plus haut possible dans mon affichage*/
+     text-align: left;
+     border: 2px solid #AABB44; /*bordure autour de toute la page*/
+     background: white; /*couleur de fond de mon conteneur*/
+}
+h1#header{
+    height: 258px;
+    background: url("../img/apple.jpg")no-repeat left top;
+    margin: 0;
+}
+h1#header a{ /*on donne les memes dimentions aux liens, chose possible grace à la proprieté diplay block, qui transforme le lien en un élément de type block, auquel on peut donner des proprietés de taille.*/
+    width: 400px;
+    height: 70px;
+    display: block;
+    background: url("../img/title.gif")no-repeat;
+    left: 350px;
+    top: 15px;
+    text-indent -5000px; /*Le text-indent negatif est fait pour pouvoir cacher le texte hors de la page, ce que nous voulons.*/
+}
+ul#menu{
+    height: 35px; /*on lui donne une hauteur, correspondant à la taille de l'image utilisée en fond*/
+    margin: 0;
+    padding: 0;
+    background: url("../img/bg_menu.gif")repeat-x 0 -25px;
+    list-style: none; /*on cache les puces*/
+}
+
+
+
