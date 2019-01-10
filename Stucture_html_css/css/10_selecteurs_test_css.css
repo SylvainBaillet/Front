@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    }
+html, body{
+    background-image:url("")
+    height: 100%;
+    width: 100%;
+}  
+.container{
+    font-family:   
+    background-color: ;
+    color: brown;
+    text-align: center;
+}
+ul#menu li{
+    background-color: blueviolet;
+    height: 35px; /*on lui donne une hauteur, correspondant à la taille de l'image utilisée en fond*/
+    margin: 0;
+    padding: 0;
+    list-style: none; /*on cache les puces*/
+}
+.container1{
+    background-color: rgb(12, 124, 72);
+}
+.container2 ol li:nth-child(8){
+    color: aqua;
+
+}
+.container3 h4{
+    color: purple;
+}
