@@ -1,0 +1,211 @@
+/************************************* REGLAGE GENERAL ******************************/
+.container{
+    width: 800px;
+    margin: 0 auto;
+    background: white;
+    border: 0.3vh solid; /* vh pour gerer la responsivité des éléments en hauteur (viewport height)
+    et vw pour gerer la responsivité des éléments en largeur (viewport width).*/
+}
+header{
+    height: 6vh;
+    background: blue;
+    padding: 1vh;
+}
+nav{
+    height: 3px;
+    background: red;
+    text-align: center;
+    font-size: 2vw;
+    color: aliceblue;
+}
+/* NAV A vible les liens du menu, ils n'ont pas de taille donc ils occupent la placede leur contenu */
+nav a:hover{
+    background: green;
+    text-decoration: none; /*efface le soulignement des liens <a></a>*/ 
+    padding: 0.5% 0.8; 
+}
+.m1,.m2,.m3,.m4{
+    height: 20vh;
+    width: 37;
+    padding: 5%;
+    margin: 1%;
+    float: left;
+}
+.m1{
+    background: url('../Images/image.jpg');
+    background-size: cover;
+}
+.m2{
+    background: rgb(177, 0, 133);
+}
+.m3{
+    background: yellow;
+}
+.m4{
+    background: rgb(159, 255, 146);
+}
+footer{
+    height: 6vh;
+    background: brown;
+}
+/************************************* RESPONSIVE ******************************/
+
+@media(max-width:500px){
+header{
+    height: 6vh;
+    background: rgb(89, 41, 134);
+}
+nav{
+    height: 3vh;
+    background: rgb(39, 133, 170);
+}
+.m1,.m2,.m3,.m4{
+    height: 20vh;
+    width: 86%;
+    margin: 0 auto;
+}
+.m1{
+    background: goldenrod;
+}
+.m2{
+    background: hotpink;
+}
+.m3{
+    background: rgb(253, 140, 65);
+}
+.m4{
+    background: rgb(151, 233, 205);
+}
+footer{
+    height: 6vh;
+    background: rgb(143, 195, 216);
+}
+}
+/* @media(max-width:992px){
+header{
+    height: 6vh;
+    background: rgb(89, 41, 134);
+}
+nav{
+    height: 3vh;
+    background: rgb(39, 133, 170);
+}
+.m1,.m2,.m3,.m4{
+    height: 20vh;
+    width: 86%;
+    margin: 0 auto;
+}
+.m1{
+    background: goldenrod;
+}
+.m2{
+    background: hotpink;
+}
+.m3{
+    background: rgb(253, 140, 65);
+}
+.m4{
+    background: rgb(151, 233, 205);
+}
+footer{
+
+}
+} */
+@media(max-width:768px){
+header{
+    height: 7vh;
+    background: rgb(89, 41, 134);
+}
+nav{
+    height: 3.5vh;
+    background: rgb(39, 133, 170);
+}
+.m1,.m2,.m3,.m4{
+    height: 20vh;
+    width: 86%;
+    margin: 0 auto;
+}
+.m1{
+    background: rgb(221, 62, 33);
+}
+.m2{
+    background: rgb(157, 69, 238);
+}
+.m3{
+    background: rgb(66, 156, 126);
+}
+.m4{
+    background: rgb(231, 80, 80);
+}
+footer{
+    height: 7vh;
+    background: rgb(51, 92, 51);
+}
+}
+@media(max-width:992px){
+header{
+    height: 8vh;
+    background: rgb(89, 41, 134);
+}
+nav{
+    height: 45vh;
+    background: rgb(39, 133, 170);
+}
+.m1,.m2,.m3,.m4{
+    height: 30vh;
+    float: left;
+}
+.m1{
+    background: rgb(221, 62, 33);
+}
+.m2{
+    background: rgb(157, 69, 238);
+}
+.m3{
+    background: rgb(66, 156, 126);
+}
+.m4{
+    background: rgb(231, 80, 80);
+}
+footer{
+    height: 8vh;
+    background: rgb(51, 92, 51);
+}
+}
+@media(max-width:1200px){
+header{
+    height: 9vh;
+    background: rgb(89, 41, 134);
+}
+nav{
+    height: 4.5vh;
+    background: rgb(39, 133, 170);
+}
+.m1,.m2,.m3,.m4{
+    height: 40vh;
+    float: left;
+}
+.m1{
+    background: linear-gradient (to left,rgb(43, 75, 43),rgb(119, 51, 51));
+}
+.m2{
+    background: rgb(157, 69, 238);
+}
+.m3{
+    background: rgb(66, 156, 126);
+}
+.m4{
+    background: linear-gradient (to left,rgb(119, 51, 51), rgb(43, 75, 43));
+}
+footer{
+    height: 9vh;
+    background: rgb(51, 92, 51);
+}
+}
+
+section{
+    margin: 1.5vh;
+}
+.clear{
+    clear: both;
+}

@@ -2,12 +2,12 @@
     margin: 0;
     }
 html, body{
-    background-image:url("")
+    background:url("../Images/Landscape-Sunset2.jpg");
     height: 100%;
     width: 100%;
 }  
 .container{
-    font-family:   
+    font-family:    
     background-color: ;
     color: brown;
     text-align: center;
@@ -21,6 +21,7 @@ ul#menu li{
 }
 .container1{
     background-color: rgb(12, 124, 72);
+    
 }
 .container2 ol li:nth-child(8){
     color: aqua;
