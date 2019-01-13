@@ -18,7 +18,7 @@ nav{
     font-size: 2vw;
     color: aliceblue;
 }
-/* NAV A vible les liens du menu, ils n'ont pas de taille donc ils occupent la placede leur contenu */
+/* NAV A cible les liens du menu, ils n'ont pas de taille donc ils occupent la placede leur contenu */
 nav a:hover{
     background: green;
     text-decoration: none; /*efface le soulignement des liens <a></a>*/ 
