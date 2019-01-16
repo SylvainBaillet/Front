@@ -1,0 +1,41 @@
+#container{
+    width: 1024px;
+    margin: 0 auto;
+} 
+.header{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+} 
+.rouge{
+    color: brown 
+}
+.titre{
+    font-size: 40px;
+    color: black;
+}
+.A{
+    width: 70%;
+    margin: 0 auto;
+}
+.B{
+    width: 30%;
+    margin: 0 auto;
+    text-align: right;
+
+}
+.F, .J{
+    text-align: right;
+}
+.A, .B, .C, .D, .E, .F, .G, .H, .I, .J{
+    width: 50%;
+    height: 512px;
+    float: left;
+}
+footer{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center; 
+    /* margin-top: 40px;  */
+    /* border: 20px; */
+}
