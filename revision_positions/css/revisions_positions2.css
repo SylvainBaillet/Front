@@ -1,0 +1,23 @@
+.container{
+    margin: 0 auto;/* centrage automatique = pas de marge en haut et en bas mais une marge à gauche et a droite sera la meme quelque soit la taille de l'ecran */
+    padding: 30px;
+    width: 960px;/* valeurs habituelles pour les sites car facilement divisible pour organiser les blocs */
+    
+    background: url("http://blog.amplitudes.com/wp-content/uploads/2016/10/shutterstock_321110801_-Colorful-autumn-landscape.-Parc-national-Mont-Tremblant.-Quebec-recoup%C3%A9e-1170x507.jpg") no-repeat;
+    box-sizing: border-box;
+    /* permet de verrouiller le conteneur sur 960px sans que le paddingvienne agrandir le bloc. */
+}
+.boite{
+    
+    margin: 10px 10px;
+    width: 450px;
+    height: 150px;
+    background-color: darkcyan;
+    border: 2px solid black;
+    display: inline-block;
+    /* affichage de deux blocs alignés, INLINE seul créé 2 cadres qui entourent uniquement le contenu comme le surlignage, BLOCK seul affiche 2 blocs l'un sur l'autre */
+    vertical-align: middle;/* centrer verticalement les deux blocs a et b => a et b ayant les memes proprietés on les rassemble */
+}    
+/* .clear{
+    clear: both;
+} */
