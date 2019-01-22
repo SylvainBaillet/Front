@@ -189,7 +189,7 @@ console.log(nb1);
 var MajoriteFR = 18;
 
 if(MajoriteFR >= 18){
-    alert("Bienvenue!");// si ma condition est vraie (boolean = TRUE/FALSE)    
+    alert("Bienvenue!");// si ma condition est vraie (boolean = TRUE/VRAI)    
 } else{
     alert("allez voir ailleurs !");// sinon => ma condition est fausse (boolean = FALSE/FAUX)
 }

@@ -1,0 +1,29 @@
+header{
+    width:60%;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aquamarine;
+}
+.container{
+    margin: 0 auto;
+    width: 60%;
+    height: 2000px;
+    background-color: aquamarine;   
+    
+}
+    
+
+.p1, .p2, .p3, .p4, .p5, .p6{
+     margin: 20px auto;
+     background-color: brown;
+     width: 430px;
+     height: 300px;  
+     border: 2px solid black;
+   } 
+.p2, .p3, .p6{
+    background: url("https://cdn-media.rtl.fr/cache/rQwYMu3pakcZ6yEbvK84CA/880v587-0/online/image/2017/0630/7789172554_la-voie-lactee-au-dessus-de-siding-spring-en-australie.jpg") 
+}
+h1{
+    padding-top: 60px;
+}
