@@ -1,3 +1,7 @@
+.body{
+    width: 1200px;
+    background-color: rgb(175, 255, 151);
+}
 .container{ 
     height: 1000px;
     width:600px;
@@ -30,4 +34,18 @@ h5{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: gray;
+}
+.clear{
+    clear: both;
+}
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }

@@ -1,0 +1,94 @@
+.container{ 
+    margin-top: 50px;
+    width: 1200px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+.header{
+    margin: 0 auto;
+    width:800px;
+    background: url(../img/woddPlank.jpg);
+    height: 500px;
+}
+.cerf{
+    background: url(triangle);
+    margin: 0 auto;
+    max-width: 20%;
+}
+.titre{
+    text-align: left;
+}
+.nav{
+    text-align: right;
+}
+.triangle{
+ margin: 0 auto;
+ display : inline-block;
+ height : 0;
+ width : 0;
+ border-top : 100px solid red;
+ border-left : 100px solid transparent;
+}
+.contenu{
+    margin: 0 auto;
+    width: 800px;    
+}
+.asperges, .soap, .moule{
+    width: 500px;
+    height: 400px;
+}
+.asperges{
+    transform:scaleX(-1);
+}
+.eggs{
+    width: 100%;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.story, .fare, .local{
+    background: url(../img/pattern.jpg);
+    text-align: center;
+    width: 300px;
+    height: 400px;
+}
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer{
+    margin: 0 auto;
+    width: 800px;
+    background: url(../img/woodPlank.jpg);
+    height: 300px;
+}
+.cesoirfooter{
+    margin-left: 10px;
+    width: 200px;
+    text-align: center;
+}
+h2, h4 ,h1{
+    font-family: 'Caveat Brush', cursive;
+}
+h5{
+    color: palevioletred;
+}
+.icones{
+    width: 200px;
+    height: 50px;
+    float: right;
+    color: red;
+}
+.story, .soap, .local{
+    float: left;
+}
+.asperges, .fare, .moule{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.g1, .g2{
+    max-width: 40%;
+}
