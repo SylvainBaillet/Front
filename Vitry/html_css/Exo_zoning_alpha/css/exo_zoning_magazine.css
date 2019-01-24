@@ -3,10 +3,12 @@
     padding: 0;
 }
 body{
-    width: 80%;
+    /* width: 80%; */
+    width: 74vw;
     background: gray;
 }
 .container{
+    margin: 0 auto;
     width: 60%;
     height: 1200px;
     background-color: aqua;
