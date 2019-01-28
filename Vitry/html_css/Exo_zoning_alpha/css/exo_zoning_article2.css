@@ -1,0 +1,13 @@
+.container{background-color: blue;
+    height: 24vh;
+    width: 80%;
+    margin: auto;
+}
+header{
+    background-color: cadetblue;
+    height: 18vh;
+}
+#section1{
+    background-color: brown;
+    height: 61vh;
+}
