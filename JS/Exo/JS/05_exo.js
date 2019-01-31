@@ -1,0 +1,2 @@
+var compteurMinutes
+var compteurHeures
