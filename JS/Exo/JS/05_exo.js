@@ -1,2 +1,0 @@
-var compteurMinutes
-var compteurHeures

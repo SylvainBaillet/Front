@@ -48,7 +48,7 @@ prompt("question: quel jour sommes nous?", "jour de la semaine");
 // --3: un nombre decimal (float)
 //  var nombre_a_virgule= -5.32;
 // --4: un Booléen (boolean = VRAI/FAUX = TRUE/FALSE)
-// L'objet BOOLAN est un objet permettant de representer une valeur Booléenne.
+// L'objet BOOLEAN est un objet permettant de representer une valeur Booléenne.
 // var unBooleen = false;// --TRUE 
 // --5: Les constantes
 /* La declaration de const permet de creér une constante accessible uniquement en lecture. Contrairement à une variable sa valeur ne peut être modifiée par réffraction plus bas dans le code.
