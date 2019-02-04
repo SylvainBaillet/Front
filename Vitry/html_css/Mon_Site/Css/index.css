@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    /* ça bloque l'élément, le recentre et ça fait une marge */
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h1{
+    font-size: 45px;/* La taille de la police */
+    color: white;/* couleuir de la police */
+    margin-top: 50px;/* Definit l'espace vertical pour la marge appliquée en haut de l'element */
+    font-family: 'amatic SC', cursive; /* La famille de la police, le nom */
+    text-align: center;/* alignement du texte dans la page */
+    font-weight: 400;/* largeur de la police */
+}
+h2{
+    font-size: 50px;
+    color: crimson;
+    padding: 20px;/* marge interieur */
+    font-weight:  bold;/* epaisseur en gras */
+    font-family: 'amatic SC', cursive;
+}
+h3{
+    font-size: 22px;
+    color: blueviolet;
+    padding: 15px;
+}
+h4{
+    font-size: 20px;
+    color: blueviolet;
+    text-align: center;
+    margin-top: 30px;
+}
+h5{
+    font-size: 90px;
+    color: purple;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'amatic SC', cursive;
+    text-align: center;
+}
+blockquote{/* Indique que le texte contenu dans l'element est une citation longue */
+    font-style: italic;
+    font-size: 120%;
+}
+strong{/* indique que le texte a une importance particuliere ou un certain serieux voir un caractere urgent*/
+    font-weight: bold;
+}
+main{
+    background: rgb(255, 111, 95);
+    margin: 0;/* definit la taille des marges sur les 4 cotés de l'element */
+    width: 1000px;/* largeur */
+    margin: 0 auto;
+}
+aside{
+    height: 300px;/* hauteur */
+}
+section{
+    margin-top: 50px;
+    padding: 20px;
+}
+footer{
+    background: rgb(255, 111, 95);/* couleur de fond */
+    height: 30px;
+}
+/* ******* Header********** */
+header{
+    background-color: rgb(56, 98, 139);
+    height: 175px;
+}
+#logo{
+    width: 25%;
+    float:left;
+    /* indique qu'un élément doit etre retiré du flux normal et doit être  placé sur le côté droit ou sur le côté gauche de son conteneur */
+    text-align: center;
+    padding: 15px;
+}
+#slogan{
+    width: 50%;
+    float: left;
+}
+#rs{
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+#rs a{
+    font-size: 30px;
+    color: white;
+    display: block;
+    /* change leur type inline en block pour les mettre les uns a coté des autres */
+    text-align: right;
+    padding: 15px 30px 0 0;
+    text-decoration: none;
+    /* utilisé pour decorer le texte en ajoutant une ligne pouvant etre positionnée sous, sur ou a travers le texte, ici "none" signifie rien du tout */
+}
+#rs a:hover{
+    /* "hover" permet de specifier l'apparence d'un élément au moment ou l'utilisateur le survol de la souris */
+    font-size: 60px;
+    transition: 2s;
+}
+/* ---------Fin du Header------------- */
+/* ***********NAV******************* */
+
+nav{
+    background: rgb(0, 179, 74);
+    border-bottom:  4px solid slategray;
+    /* proprieté qui definit la bordure du coté bas d'un élément */
+    text-align: center;
+    padding: 17px;
+}
+nav a{
+    font-family: 'amatic SC', cursive;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 50px;
+    border: 1px solid pink;
+    /* permet de definir les proprietés liées a la bordure */
+    padding: 6px 9px;
+    border-radius: 7px;
+    /* permet de definir des cotés arrondis pour la bordure d'un élément */
+    margin: 0px 8px;
+}
+nav a:hover{
+    background: pink;
+    transition: 2s;
+}
+.activ{
+    /* pour appeller une class en css on utilise "."*/
+    background: pink;
+}
+/* ---------------Fin de la nav---------------------- */
+/* ---------------Debut page texte------------------- */
+.roboto p{
+    font-family: 'roboto condensed', sans-serif;
+}
+.select p{
+    color: red; /*tous le p à l'intérieur de la balise "section" */
+}
+.select p:first-of-type{
+    color: purple;
+}
+.select p:last-of-type{
+    color: purple;
+}
+.select p:nth-last-of-type(5), .select p:nth-last-of-type(6){
+    color: black;
+}
+.select div:not(.zoneb){/* Toutes les div du parent select seront en gras not(.zoneb) donc sauf la zoneb */
+    font-weight: bold;
+}
+.select .zonea{
+    color: red;
+}
+.select .zoneb{
+    color: #963;
+}
+.select .zoneb.couleurbleu{
+    color: blue;
+}
+.select #zonec{
+    color: #98f32f;
+}
+.select #zoned span{
+/* Le span prendra en compte aussi .couleurbleu sauf pour la couleur car on l'aura deja definie */
+color: #32ff32;
+}
+/* ---------------Fin de la nav---------------------- */
+/* ---------------Debut page image------------------- */
+.imgfond{
+    background: black url(../Img/ITACTTOS_toscane-paysage-circuits-italie-tui.jpg)no-repeat;
+    background-size: cover;
+}
+.imgfond p{
+    width: 75%;
+    background: rgba(255, 255, 255, 0.425);
+    margin: 100px auto 200px auto;
+    padding: 20px;
+    font-size: 120%;
+    border-radius: 10px;
+}
