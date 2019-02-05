@@ -27,7 +27,7 @@
     <header>
         <!-- Zone du haut exp: banniere, logo, slogan... -->
         <div id="logo">
-            <a href="texte.html" target="blank"><img src="../Mon_Site/Img/logo.png" alt="logo htmlcss"></a>
+            <a href="index.html" target="_blank"><img src="../Mon_Site/Img/logo.png" alt="logo htmlcss"></a>
         </div>
         <div id="slogan">
             <h1>Mon premier site en html css</h1>
@@ -57,34 +57,27 @@
     </nav>
     <main>
         <!-- main contenu principal de la page -->
-        <aside>
-            <h2 class="h2texte">
-                Textes
-            </h2>
-
-
-        </aside>
-        <section id="">
-            <!-- Section, zone de contenu: titre, texte, regroupement, thematique... -->
-            <div>
-                <p class="ptexte">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, corporis incidunt iste atque
-                    similique molestias, laudantium ducimus quis architecto odit odio dignissimos asperiores minus
-                    magni eos. Repellat eligendi ducimus amet?
-                </p>
-                <!-- Div: Zone supplement aire de contenu -->
+        <h2>
+            Les Positions
+        </h2>
+        <section>
+            <h3>Position absolue</h3>
+            <h4>Centrer un élément de type block</h4>
+            <div class="absolue">
+                Test
             </div>
-            <span>
-                <!-- span: zone supplementaire de contenu -->
-                <!-- Le span est un conteneur generique en ligne (inline) pour les contenus phrasés, ils ne representent rien de particulier -->
-            </span>
-            <article>
-                <!-- Article: zone supplementaire de contenu -->
-            </article>
+        </section>
+
+        <section>
+            <h3>Position relative</h3>
+            <div class="relative">
+                <div></div>
+            </div>
         </section>
     </main>
-    <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
-    <!-- aria acces de contenu web plus faciles pour les handicapés=> https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+    <section>
+        <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
+    </section>
     <footer>
         <!-- Footer: zone du bas, ex: les liens administratifs, mentions légales, plan du site etc... -->
     </footer>

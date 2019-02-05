@@ -64,7 +64,7 @@ strong{/* indique que le texte a une importance particuliere ou un certain serie
     font-weight: bold;
 }
 main{
-    background: rgb(255, 111, 95);
+    background: #e88c5d;
     margin: 0;/* definit la taille des marges sur les 4 cotés de l'element */
     width: 1000px;/* largeur */
     margin: 0 auto;
@@ -77,13 +77,13 @@ section{
     padding: 20px;
 }
 footer{
-    background: rgb(255, 111, 95);/* couleur de fond */
+    background: #e88c5d;/* couleur de fond */
     height: 30px;
 }
 /* ******* Header********** */
 header{
-    background-color: rgb(56, 98, 139);
-    height: 175px;
+    background-color: #933f99;
+    height: 190px;
 }
 #logo{
     width: 25%;
@@ -120,7 +120,7 @@ header{
 /* ***********NAV******************* */
 
 nav{
-    background: rgb(0, 179, 74);
+    background: #573697;
     border-bottom:  4px solid slategray;
     /* proprieté qui definit la bordure du coté bas d'un élément */
     text-align: center;
@@ -128,7 +128,7 @@ nav{
 }
 nav a{
     font-family: 'amatic SC', cursive;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
     font-weight: 50px;
@@ -186,7 +186,7 @@ color: #32ff32;
 /* ---------------Fin de la nav---------------------- */
 /* ---------------Debut page image------------------- */
 .imgfond{
-    background: black url(../Img/ITACTTOS_toscane-paysage-circuits-italie-tui.jpg)no-repeat;
+    background: black url(../Img/FLRATTOS_autotours-toscane-italie-tui.jpg)no-repeat;
     background-size: cover;
 }
 .imgfond p{
@@ -196,4 +196,155 @@ color: #32ff32;
     padding: 20px;
     font-size: 120%;
     border-radius: 10px;
+}
+/* .img2{
+    background: black url(../Img/b482d6711ca89ea3fe04d255f7d2ee4a.jpg)no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    height: 400px;
+    margin: auto;
+    box-shadow: 4px 4px 15px rgb(0, 0, 0);
+}
+.sectimg2{
+    width: 25%;
+    height: 600px;
+    margin: auto;
+}
+#h3img2{
+    margin: 20px 20px; */
+/* } */
+/* -----------2eme image-----------  */
+img{
+    margin: auto;
+    width: 250px;
+    display: block;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+/* -----------rotation------------------ */
+.rotationImg{  /*image de type inline-block, elle comporte des marges par défaut*/
+     /*pour supprimer cette marge, ouvrir commentaire après première photo et le fermer
+     avant deuxième photo ou enlever les espaces dans le HTML*/
+    text-align: center;
+}    
+.image{
+    margin: 20px;
+    border: 5px solid #eee;
+    box-shadow:12px 12px 6px 6px rgba(0,0,0,0.5);
+    transition: 1s;
+}
+.image:hover{
+    transform: rotate(7deg);
+}
+.rotation360:hover{
+    transform: rotate(-360deg);
+}
+
+/* ----------Listes-------------- */
+.liste1{/* Je cible les ul qui a pour class liste 1 */
+    list-style: none;/* enleveles puces dans une piste */
+}
+.liste1 li{
+    display: inline-block;
+    margin: 15px;
+}    
+li i{
+    font-size: 90%;
+    color: tomato;
+}
+.imbriquee, .imbriquee ul{
+    padding-left: 15px;/* marge interieur gauche */
+    margin: 5px;
+    cursor: pointer;
+}
+.asie, .eu{
+    margin-top: 20px;
+    list-style:  none;
+    font-size: 20px;
+}
+.asie ul li:hover{
+    color: tomato;
+    font-size: 30px;
+    transition: 1s;
+}
+.asie span:hover{
+    color: tomato;
+    font-size: 30px;
+    transition: 1s;
+}
+.eu span:hover{
+    color: tomato;
+    font-size: 30px;
+    transition: 1s;
+}
+.eu ul li:hover{
+    color: tomato;
+    font-size: 30px;
+    transition: 1s;
+}
+.asie span, .eu span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* -------------Tableaux---------------- */
+
+.tableau{
+    margin: 0 auto;
+    width: 80%;
+    border: 4px solid rgb(0, 0, 0);
+    border-collapse: collapse; /*par defaut la bordure contient 2 traits, pour que le trait soit unique on utilise la propriété "collapse" */
+}
+thead, tfoot{ 
+    background-color: rgb(197, 231, 197);
+    border: 2px solid rgb(50, 58, 39);
+}
+th{
+    border: 1px solid black;
+    width: 25%;
+    padding: 4px;
+}
+td{
+    border: 1px solid black;
+    font-size: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+/* ------------Page position-------------- */
+.absolue{
+    margin: 0 auto;
+    width: 500px;
+    height: 200px;
+    background: #3cc;
+    color: white;
+    text-align: center;
+    line-height: 180px;
+    font-size: 50px;
+    font-style: italic;
+}
+/* .absolute{
+    position: absolute;
+    top: 10%;
+    height: 10%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150px;
+} */
+.relative{
+    background: red;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    bottom: 50px;
+    margin: 0 auto;
+}
+.relative div{
+    position: absolute;
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    background: blue;
 }

@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Textes</title>
+    <title>Tableaux</title>
     <!-- Titre du site apparaissant sur l'onglet -->
     <meta name="description" content="Ma premiere page en html css">
     <!-- Description sous le titre dans la recherche Google, les moteurs de recherche s'en servent un peu comme des mots clefs pour les rechercher -->
@@ -27,7 +27,7 @@
     <header>
         <!-- Zone du haut exp: banniere, logo, slogan... -->
         <div id="logo">
-            <a href="texte.html" target="blank"><img src="../Mon_Site/Img/logo.png" alt="logo htmlcss"></a>
+            <a href="index.html" target="_blank"><img src="../Mon_Site/Img/logo.png" alt="logo htmlcss"></a>
         </div>
         <div id="slogan">
             <h1>Mon premier site en html css</h1>
@@ -57,34 +57,68 @@
     </nav>
     <main>
         <!-- main contenu principal de la page -->
-        <aside>
-            <h2 class="h2texte">
-                Textes
-            </h2>
-
-
-        </aside>
-        <section id="">
-            <!-- Section, zone de contenu: titre, texte, regroupement, thematique... -->
-            <div>
-                <p class="ptexte">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, corporis incidunt iste atque
-                    similique molestias, laudantium ducimus quis architecto odit odio dignissimos asperiores minus
-                    magni eos. Repellat eligendi ducimus amet?
-                </p>
-                <!-- Div: Zone supplement aire de contenu -->
-            </div>
-            <span>
-                <!-- span: zone supplementaire de contenu -->
-                <!-- Le span est un conteneur generique en ligne (inline) pour les contenus phrasés, ils ne representent rien de particulier -->
-            </span>
-            <article>
-                <!-- Article: zone supplementaire de contenu -->
-            </article>
+        <h2>
+            Les tableaux
+        </h2>
+        <section>
+            <table class="tableau">
+                <!-- Titre du tableau -->
+                <caption><i class="fas fa-plane-departure"aria-hidden="true"></i> Vols Paris Rome</caption>
+                <!-- En t-tête -->
+                <thead>
+                    <!-- >tr= rang ou rangée -->
+                    <tr>
+                        <!-- >tr= rang ou rangée -->
+                        <th></th><!-- th= titre ou en-tête d'une rangée -->
+                        <th>02/08/2019</th>
+                        <th>03/08/2019</th>
+                        <th>05/08/2019</th>
+                    </tr>
+                </thead>
+                <!-- tfoot = bas/fin du tableau /!\ les normes W3C mettent la balise tfoot avant celle du corps du tableau (tbody) -->
+                <tfoot>
+                    <tr>
+                        <!--td= les cellules-->
+                        <td></td>
+                        <td>02/08/2019</td>
+                        <td>03/08/2019</td>
+                        <td>05/08/2019</td>
+                    </tr>
+                </tfoot>
+                <!-- tbody = corps du tableau -->
+                <tbody>
+                    <tr>
+                        <th rowspan="2">AirFrance</th>
+                        <td>Départ 10h / Arivée 13h</td>
+                        <td>Départ 15h / Arivée 18h</td>
+                        <td>Départ 17h / Arivée 20h</td>
+                    </tr>
+                    <tr>
+                        <td>200€</td>
+                        <td>180€</td>
+                        <td>170€</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th rowspan="2" class="color">Alitalia</th>
+                        <td>Départ 6h / Arivée 9h</td>
+                        <td>Départ 13h / Arivée 16h</td>
+                        <td>Départ 21h / Arivée 00h</td>
+                    </tr>
+                    <tr>
+                        <td>120€</td>
+                        <td>250€</td>
+                         <td>100€</td>
+                    </tr>  
+                </tbody>
+            </table>
         </section>
+            
     </main>
-    <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
-    <!-- aria acces de contenu web plus faciles pour les handicapés=> https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+    <section>
+        <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
+    </section>
     <footer>
         <!-- Footer: zone du bas, ex: les liens administratifs, mentions légales, plan du site etc... -->
     </footer>
