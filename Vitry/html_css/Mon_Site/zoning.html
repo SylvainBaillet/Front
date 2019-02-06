@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Textes</title>
+    <title>Zoning</title>
     <!-- Titre du site apparaissant sur l'onglet -->
     <meta name="description" content="Ma premiere page en html css">
     <!-- Description sous le titre dans la recherche Google, les moteurs de recherche s'en servent un peu comme des mots clefs pour les rechercher -->
@@ -27,7 +27,7 @@
     <header>
         <!-- Zone du haut exp: banniere, logo, slogan... -->
         <div id="logo">
-            <a href="texte.html" target="blank"><img src="../Mon_Site/Img/logo.png" alt="logo htmlcss"></a>
+            <a href="index.html" target="_blank"><img src="../Mon_Site/Img/logo.png" alt="logo htmlcss"></a>
         </div>
         <div id="slogan">
             <h1>Mon premier site en html css</h1>
@@ -57,34 +57,132 @@
     </nav>
     <main>
         <!-- main contenu principal de la page -->
-        <aside>
-            <h2 class="h2texte">
-                Textes
-            </h2>
-
-
-        </aside>
-        <section id="">
-            <!-- Section, zone de contenu: titre, texte, regroupement, thematique... -->
-            <div>
-                <p class="ptexte">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, corporis incidunt iste atque
-                    similique molestias, laudantium ducimus quis architecto odit odio dignissimos asperiores minus
-                    magni eos. Repellat eligendi ducimus amet?
-                </p>
-                <!-- Div: Zone supplement aire de contenu -->
+        <h2>
+            Zoning
+        </h2>
+        <section>
+            <h3>Zoning 1</h3>
+            <div id="zoning1">
+                <div class="header">
+                    <p>Zone du haut</p>
+                </div>
+                <aside>
+                    <p>zone de gauche</p>
+                </aside>
+                <section>
+                    <p>zone de droite</p>
+                </section>
+                <div class="clear"></div>
             </div>
-            <span>
-                <!-- span: zone supplementaire de contenu -->
-                <!-- Le span est un conteneur generique en ligne (inline) pour les contenus phrasés, ils ne representent rien de particulier -->
-            </span>
-            <article>
-                <!-- Article: zone supplementaire de contenu -->
-            </article>
+        </section>
+        <!-- zoning 2 -->
+        <section>
+            <h3>Zoning 2</h3>
+            <section id="zoning2sect">
+                <header id="zoning2hd">
+                    <p>Zone du haut<br>HEADER</p>
+                </header>  
+                <aside id="z2aside1">
+                    <p>Zone de gauche<br>ASIDE</p>
+                </aside>
+                <div class="zoning2">
+                    <p>Zone du milieu <br>MIDDLE</p>
+                </div>
+                <aside id="z2aside2">
+                    <p>Zone de gauche<br>ASIDE</p>
+                </aside>
+                <div class="clear"></div>
+            </section>
+        </section>
+        <!-- zoning 3 -->
+        <section>
+            <h3>Zoning 3</h3>
+            <section id="contzoning3">
+                <div id="z3div1">
+                    <p>Gauche<br>SECTION</p>
+                </div>
+                <div id="z3div2">
+                    <p>Droite<br>SECTION</p>
+                </div>
+                <div class="clear"></div>
+                <footer id="z3footer">
+                    <p>Bas<br>FOOTER</p>
+                </footer>
+            </section>
+        </section>
+        <!-- zoning 4 -->
+        <section>
+            <h3>Zoning 4</h3>
+            <section id="contzoning4">
+                <header class="z4header">
+                    <p>HEADER</p>
+                </header>
+                <nav id="z4nav">
+                    <p>NAV</p>
+                </nav>
+                <section id="z4milieu">
+                    <div class="z4milieu">
+                        <p>SECTION</p>
+                    </div>
+                </section>
+                <div class="clear"></div>
+                <footer id="z4footer">
+                    <p>FOOTER</p>
+                </footer> 
+                <div class="clear"></div>
+            </section>
+        </section>
+        <!-- zoning 5 -->
+        <section>
+            <h3>Zoning 5</h3>
+            <div id="contzoning5">
+                <header id="z5header">
+                    <p>HEADER</p>
+                </header>
+                <nav id="z5nav">
+                    <p>NAV</p>
+                </nav>
+                <section id="z5section">
+                    <div class="z5section">
+                        <div id="zone1">ZONE 1</div>
+                        <div id="zone2">ZONE 2</div>
+                        <div id="zone3">ZONE 3</div>
+                        <div id="zone4">ZONE 4</div>
+                    </div>
+                </section>
+                <footer id="z5footer">
+                    <p>FOOTER</p>
+                </footer>
+            </div>
+        </section>
+        <!-- Zoning 6 -->
+        <section>
+            <h3>Zoning 6</h3>
+            <div id="contzoning6">
+                <section id="z6header">
+                    <div id="z6hd_1">Haut1</div>
+                    <div id="z6hd_2">Haut2</div>
+                    <div id="z6hd_3">Haut3</div>
+                </section>
+                <section id="z6nav">
+                    <p> Nav</p>
+                </section>
+                <section>
+                    <aside id="z6aside">Zone de gauche</aside>
+                    <div id></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </section>
+                <section></section>
+            </div>
         </section>
     </main>
-    <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
-    <!-- aria acces de contenu web plus faciles pour les handicapés=> https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+    <section>
+        <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
+    </section>
     <footer>
         <!-- Footer: zone du bas, ex: les liens administratifs, mentions légales, plan du site etc... -->
     </footer>
