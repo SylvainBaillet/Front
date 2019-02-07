@@ -156,6 +156,7 @@
             </div>
         </section>
         <!-- Zoning 6 -->
+        <!-- J'ai fais ce zoning 6 en me servant du flux naturel et du float, sans avoir besoin de class clear, si cela n'avait pas marché, j'aurais mis une class clear -->
         <section>
             <h3>Zoning 6</h3>
             <div id="contzoning6">
@@ -165,18 +166,47 @@
                     <div id="z6hd_3">Haut3</div>
                 </section>
                 <section id="z6nav">
-                    <p> Nav</p>
+                    Menu
                 </section>
-                <section>
+                <section id="z6milieu">
                     <aside id="z6aside">Zone de gauche</aside>
-                    <div id></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div id="z6A">A</div>
+                    <div id="z6B">B</div>
+                    <div id="z6slide"><!-- images slider -->
+                    <!-- exo supplementaire, integrer un slider avec du JS -->
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        <img class="mySlides" src="../Mon_Site/Img/slide1.jpg" style="width:100%">
+                        <img class="mySlides" src="../Mon_Site/Img/slide2.jpg" style="width:100%">
+                        <img class="mySlides" src="../Mon_Site/Img/slide3.jpg" style="width:100%">
+                        <img class="mySlides" src="../Mon_Site/Img/slide4.jpg" style="width:100%">
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
 
+                        function plusDivs(n) {
+                            showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            if (n > x.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = x.length }
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex - 1].style.display = "block";
+                        }
+                    </script>
+                    <!-- fin integration slider JS -->
+                    </div>
+                    <div id="z6C">C</div>
+                    <div id="z6D">D</div>
+                    <div id="z6E">E</div>
+                    <div id="z6F">F</div>
                 </section>
-                <section></section>
+                <footer id="z6footer">Footer</footer>
             </div>
         </section>
     </main>
@@ -186,6 +216,7 @@
     <footer>
         <!-- Footer: zone du bas, ex: les liens administratifs, mentions légales, plan du site etc... -->
     </footer>
+    <script type="text/javascript" src="../Mon_Site/js/"></script>
 </body>
 
 </html>
