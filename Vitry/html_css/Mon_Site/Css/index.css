@@ -38,7 +38,7 @@ h2{
     color: crimson;
     padding: 20px;/* marge interieur */
     font-weight:  bold;/* epaisseur en gras */
-    font-family: 'amatic SC', cursive;
+    font-family:'amatic SC', cursive;
 }
 h3{
     font-size: 22px;
@@ -786,6 +786,61 @@ button:hover{
     height: 80px;
     background: #309440;
 }
+
+
+/* ---------Liens & Menus--------- */
+/**********Page liens et menus**********/
+.ancre{
+  text-align: center;
+  margin: 15px;
+}
+.ancre a{
+  color: white;
+  background: tomato;
+  padding:7px;
+  text-decoration: none;
+  border-radius: 7px;
+  margin: 5px;
+  box-shadow: 0px 1px 24px 0px rgba(46,50,50,0.73);
+}
+.ancre a:hover{
+font-size: 150%;
+transition: 2s;
+}
+.contAncre{
+  border-top: 2px solid #2c3e50;
+  border-bottom: 2px solid #2c3e50;
+}
+#lien a{
+  text-decoration: none;
+  color: lightblue;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 120%;
+}
+#menu nav{
+  background: transparent;
+  border: none;
+}
+#menu ul{
+  list-style: none;
+  text-align: center;
+}
+#menu ul li{
+  display: inline-block;
+}
+#menu nav a{
+  padding: 10px;
+  color: CRIMSON;
+  text-decoration: none;
+  background: white;
+}
+#menu nav a:hover{
+  background: yellow;
+  transition: 1s ease-in-out;
+}
+
 
 
 

@@ -1,0 +1,21 @@
+.container{
+    width: 1060px;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+!.navbar{
+    width: 100%;
+    background: hotpink;
+}
+#hrnav{
+    background: aliceblue;
+    transform: rotate(90deg);
+    width: 15px;
+}
+.carousel-inner{
+    height: 160px;
+    background: rgb(80, 83, 85);
+}
+.img-responsive{
+}
