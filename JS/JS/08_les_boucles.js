@@ -1,7 +1,7 @@
 // alert("test");
 /*  Les boucles permettent de repeter des action simplement et rapidement. Une boucle peut etre vue comme une version informatique de "copier N lignes" ou de faire "x fois quelquechose". Par exemple n JS on peut traduire "faire 5 pas vers l'est" avec cette boucle*/
 // var pas;
-// for(pas=0; pas<5;pass++){
+// for(pas=0; pas<5;pas++){
 //     // ceci sera executé 5 fois
 //     // a chaque éxécution, la variable pas augmentera de 1
 //     //  Lorsqu'elle sera arrivée a 5 la boucle se terminera.
