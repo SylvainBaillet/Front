@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width:100%;
+    height: 2000px;
+    background: url(../background.png);
+}
+#nav{
+    width: 100%; 
+    height:50px;
+    background-color: #C55394;
+}
+#navg{
+    width: 20%; 
+    height:40px;
+    margin: 10px;
+    color: aliceblue;
+    font-family: 'Courgette', cursive;
+    float: left;
+}
+#navd{
+    width: 20%; 
+    height:40px;
+    margin: 15px;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    float: right;
+    
+}
+#navd p{
+    display: inline;
+    height: 40px;
+    width: 100px;
+    margin-right: 15px;
+    text-align: center;
+}
+#navd p:hover{
+    background-color: rgb(255, 0, 170);
+    height: 40px;
+}
+#sect1{
+    margin: 0 auto;
+    background: url(../rainbow.png)no-repeat;
+    height: 150px;
+    width: 400px;
+}
