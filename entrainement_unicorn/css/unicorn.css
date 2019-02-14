@@ -52,3 +52,11 @@
     text-align: center;
     padding: 20px;
 }
+#sect2contenu{
+    width: 60%;
+    height: 1200px;
+    margin-top: 200px;
+    margin: auto;
+    background: lightcyan;
+    border-radius: 4px;
+}
