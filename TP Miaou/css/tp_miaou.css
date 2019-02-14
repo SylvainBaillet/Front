@@ -1,0 +1,57 @@
+#container{
+    width: 70%;
+    height: 1200px;
+    margin: 0 auto;
+    background-color: rgb(36, 43, 116);
+}
+#sect1 h1{
+    padding-top: 40px;  
+    font-family: 'Indie Flower', cursive;
+    color: aliceblue;
+    text-align: center;
+    font-size: 80px;
+
+}
+#sect1{
+    width: 50%;
+    height: 300px;
+    margin:  auto;
+}
+#sect2{
+    width: 80%;
+    height: 300px;
+    margin:  auto;
+}
+#sect3{
+    width: 80%;
+    height: 300px;
+    margin:  auto;
+}
+#sect4{
+    width: 80%;
+    height: 300px;
+    margin:  auto;
+}
+.chat1, .chat2, .chat3{
+    height: 250px; 
+    width: 28%;
+    background-size:cover ;
+    margin-left: 55px;
+    float: left;
+}
+
+.chat4, .chat5, .chat6,.chat7, .chat8, .chat9{
+    height: 250px; 
+    width: 28%;
+    background-size:cover;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 40px;
+    float: left;
+} 
+img{
+    margin: 0 auto;
+}
+figcaption{
+    color:aliceblue;
+}

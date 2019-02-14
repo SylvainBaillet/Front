@@ -41,8 +41,14 @@
     height: 40px;
 }
 #sect1{
-    margin: 0 auto;
+    margin: 20px auto;
     background: url(../rainbow.png)no-repeat;
     height: 150px;
-    width: 400px;
+    width: 400px;   
+}
+#sect1 h1{
+    font-family: 'Dancing Script', cursive;
+    color: #C55394;
+    text-align: center;
+    padding: 20px;
 }
