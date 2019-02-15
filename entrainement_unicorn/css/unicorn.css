@@ -50,6 +50,7 @@
     font-family: 'Dancing Script', cursive;
     color: #C55394;
     text-align: center;
+    font-size: 50px;
     padding: 20px;
 }
 #sect2contenu{
@@ -59,4 +60,5 @@
     margin: auto;
     background: lightcyan;
     border-radius: 4px;
+    box-shadow: 4px 4px 4px 4px gray;
 }

@@ -819,6 +819,10 @@ transition: 2s;
   margin-bottom: 15px;
   font-size: 120%;
 }
+#lien a:hover{
+    color: tomato;
+}
+/* ******* lien menu********* */
 #menu nav{
   background: transparent;
   border: none;
@@ -840,12 +844,93 @@ transition: 2s;
   background: yellow;
   transition: 1s ease-in-out;
 }
-
-
-
-
-
-
+/* ********Menu Déroulant******** */
+#menuderoul{
+height:650px; 
+}
+#menuderoul nav{
+background: transparent;
+border: none;
+width: 90%;
+margin: 0 auto;
+}
+#menuderoul ul li{
+float: left;
+list-style: none;
+width: 20%;
+}
+#menuderoul ul ul{/* on definit les listes qui sont dans les listes */
+  display: none;
+}
+#menuderoul ul li ul li{
+    width: 100%;
+    border-top: gainsboro;
+}
+#menuderoul nav li a{
+    text-decoration: none;
+    color: black;
+    padding: 4px 0 4px;
+    display: block; /* pour qu'ils s'etendent sur toute la longueur de son conteneur */
+    background: mistyrose;
+}
+#menuderoul nav ul.niveau1 li.sousmenu:hover ul.niveau2{
+    display: block;
+}
+/********************* fin de la page Lien et Menu ******************************/
+/********************* Debut de la page formulaire ******************************/
+form{
+    width: 60%;
+    background: brown;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+}
+label{
+    margin: 10px 0;
+    width: 50%;
+    display: inline-block;
+}
+textarea{
+    resize: none;
+}
+label[for="orange"],[for="fraise"],[for="mangue"]{
+    width: 10%;
+}
+/********************* fin de la page Formulaire ******************************/
+/********************* Debut de la page Multimedia ******************************/
+.videoFond{
+  padding-left: 0;
+  padding-right: 0;
+}
+.videoFond video{
+  position: absolute;
+  z-index:1;
+  width: 100%;
+}
+.videoTexte{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.videoFond p{
+  position: absolute;
+  z-index: 2;
+  width: 500px;
+  margin: auto;
+  background: rgba(255,255, 255, 0.6);
+  left: 250px;
+  top: 100px;
+  padding: 20px;
+  font-size: 120%;
+  border-radius: 10px;
+}
+iframe[allowfullscreen]{/*Cet attribut, lorsqu'il est TRUE(vrai) indique que l'IFRAME
+intégré peut-être passé en pleine écran avec la méthode Element.requestFullscreen()*/
+width: 100%;
+}
+.audio{
+  text-align: center;
 
 
 

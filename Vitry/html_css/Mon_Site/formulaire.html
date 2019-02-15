@@ -16,8 +16,8 @@
     <!-- Relie le fichier html a mon fichier css(Cascading style sheets) -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script" rel="stylesheet">
     <!-- Liens pour les polices via Google font -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Lien pour le "font-awesome récupere la font sur le site  dans GET STARTED" -->
 
 </head>
@@ -27,7 +27,7 @@
     <header>
         <!-- Zone du haut exp: banniere, logo, slogan... -->
         <div id="logo">
-            <a href="texte.html" target="blank"><img src="../Mon_Site/Img/logo.png" alt="logo htmlcss"></a>
+            <a href="index.html" target="_blank"><img src="../Mon_Site/Img/logo.png" alt="logo htmlcss"></a>
         </div>
         <div id="slogan">
             <h1>Mon premier site en html css</h1>
@@ -56,37 +56,62 @@
         <a href="animation.html">Animations</a>
         <a href="explication_flexbox.html">Flexbox</a>
         <a href="explication.html">Explications</a>
+        <a href="pattern.html">Pattern</a>
+        <a href="fancy_box.html">Fancy Box</a>
     </nav>
     <main>
         <!-- main contenu principal de la page -->
-        <aside>
-            <h2 class="h2texte">
-                Textes
-            </h2>
-
-
-        </aside>
-        <section id="">
-            <!-- Section, zone de contenu: titre, texte, regroupement, thematique... -->
-            <div>
-                <p class="ptexte">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, corporis incidunt iste atque
-                    similique molestias, laudantium ducimus quis architecto odit odio dignissimos asperiores minus
-                    magni eos. Repellat eligendi ducimus amet?
+        <h2>
+            Formulaire
+        </h2>
+        <section id="formulaire">
+            <form method="post" action="url de destination" enctype="multipart/form-data">
+                <label for="pseudo">Pseudo*</label>
+                <input type="text" id="pseudo" name="pseudo" requiered> <br>
+                <label for="prenom">Prenom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="votre prenom"> <br>
+                <label for="mdp">Password</label>
+                <input type="password" id="mdp" name="mdp" requiered> <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" requiered> <br>
+                <label for="cv">CV</label>
+                <input type="file" id="cv" name="cv" requiered> <br>
+                <p>Quels sont vos fruits preferés</p> <br>
+                <p>
+                    <!-- cases à cocher carrées -->
+                    <input type="checkbox" name="choix" checked>Orange
+                    <input type="checkbox" name="choix">Fraise
+                    <input type="checkbox" name="choix">Mangue <br>
                 </p>
-                <!-- Div: Zone supplement aire de contenu -->
-            </div>
-            <span>
-                <!-- span: zone supplementaire de contenu -->
-                <!-- Le span est un conteneur generique en ligne (inline) pour les contenus phrasés, ils ne representent rien de particulier -->
-            </span>
-            <article>
-                <!-- Article: zone supplementaire de contenu -->
-            </article>
+                <label for="cv">Code postal</label>
+                <input type="text" id="cp" name="cp" max-length="5" pattern[0-9]{5} title="5 chiffres entre 0 et 9"> <br>
+                
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" rows="6"></textarea>
+
+                <input type="submit" name="Envoyer" value="Envoyer">
+                <input type="reset" name="Annuler" value="Annuler">
+                <br>
+
+            </form>
+                
+
+
+                
+
+
+
+                
+               
+                
+                  
+
+                
         </section>
     </main>
-    <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
-    <!-- aria acces de contenu web plus faciles pour les handicapés=> https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+    <section>
+        <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
+    </section>
     <footer>
         <!-- Footer: zone du bas, ex: les liens administratifs, mentions légales, plan du site etc... -->
     </footer>

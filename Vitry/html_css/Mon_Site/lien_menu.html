@@ -55,6 +55,8 @@ servent un peu comme des mots clefs pour les rechercher-->
         <a href="animation.html">Animations</a>
         <a href="explication_flexbox.html">Flexbox</a>
         <a href="explication.html">Explications</a>
+        <a href="pattern.html">Pattern</a>
+        <a href="fancy_box.html">Fancy Box</a>
     </nav>
     <main>
         <h2>Les liens et menus</h2>
@@ -67,6 +69,8 @@ servent un peu comme des mots clefs pour les rechercher-->
         </section>
         <section id="lien">
             <h3>Les liens</h3>
+            <!-- target="_blank" ouvre un nouvel onglet -->
+            <!-- onclick="window.print" JS pour envoyer le script permettant de lancer l'impression -->
             <a href="https://codepen.io" title="Se rendre sur le site de CodePen" target="_blank">CodePen</a>
             is a social development environment for front-end designers ans developers.<br /><br />
             <a href="http://www.google.fr" target="_blank">Google</a> le moteur de recherche.<br>
@@ -84,6 +88,38 @@ servent un peu comme des mots clefs pour les rechercher-->
                     <li><a href="#">Parcours</a></li>
                     <li><a href="#">Réalisation</a></li>
                     <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- menu deroulant -->
+        <section id="menuderoul">
+            <h3>Les menus deroulants</h3>
+            <nav>
+                <ul class="niveau1">
+                    <li><a href="#">Accueil</a></li>
+                        <li class="sousmenu"><a href="#">Formation</a>
+                            <ul class="niveau2">
+                                <li><a href="#">Etudiants</a></li>
+                                <li><a href="#">Emplois du temps</a></li>
+                                <li><a href="#">Recherche d'emplois</a></li>
+                                <li><a href="#">Document</a></li>
+                            </ul></li>
+                    <li><a href="#">Information</a></li>
+                        <li class="sousmenu"><a href="#">Cours</a>
+                            <ul class="niveau2">
+                                <li><a href="#">Internet</a></li>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">CMS</a></li>
+                                <li><a href="#">Stas</a></li>
+                                <li><a href="#">Reseaux sociaux</a></li>
+                                <li><a href="#">Référencement</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Cahier des charges</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                            </ul>
+                        </li>
+                        
+                    <li><a href="#">Mon CV</a></li>
                 </ul>
             </nav>
         </section>
