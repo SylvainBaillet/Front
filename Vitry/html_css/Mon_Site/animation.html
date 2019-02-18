@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Textes</title>
+    <title>Animation</title>
     <!-- Titre du site apparaissant sur l'onglet -->
     <meta name="description" content="Ma premiere page en html css">
     <!-- Description sous le titre dans la recherche Google, les moteurs de recherche s'en servent un peu comme des mots clefs pour les rechercher -->
@@ -61,37 +61,61 @@
     </nav>
     <main>
         <!-- main contenu principal de la page -->
-        <aside>
-            <h2 class="h2texte">
-                Textes
-            </h2>
-
-
-        </aside>
-        <section id="">
+        <h2 class="h2texte">
+            Animations
+        </h2>
+        <section >
             <!-- Section, zone de contenu: titre, texte, regroupement, thematique... -->
-            <div>
-                <p class="ptexte">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, corporis incidunt iste atque
-                    similique molestias, laudantium ducimus quis architecto odit odio dignissimos asperiores minus
-                    magni eos. Repellat eligendi ducimus amet?
-                </p>
-                <!-- Div: Zone supplement aire de contenu -->
-            </div>
-            <span>
-                <!-- span: zone supplementaire de contenu -->
-                <!-- Le span est un conteneur generique en ligne (inline) pour les contenus phrasés, ils ne representent rien de particulier -->
-            </span>
-            <article>
-                <!-- Article: zone supplementaire de contenu -->
+           <h3>Infobulle</h3>
+               <div class="infobulle">
+                    <p>
+                        <a href="#">Passez la souris !<span> Salut je suis un popup!</span> </a>
+                    </p>
+                    <p>
+                        <a href="#">Ici aussi ! <span>Salut je suis un autre popup!</span> </a>
+                    </p>
+                    <p>
+                        <a href="#">Une fois encore <span>Salut encore un popup!</span></a>
+                    </p>  
+               </div>  
+        </section>
+        <section>
+            <h3>Effet de survol avec transitions et filtres</h3>
+            <ul class="imgEffets">
+                <li><img src="../Mon_Site/img/survol_img1.jpg" alt=""></li>
+                <li><img src="../Mon_Site/img/survol_img2.jpg" alt=""></li>
+                <li><img src="../Mon_Site/img/survol_img3.jpg" alt=""></li>
+                <li><img src="../Mon_Site/img/survol_img4.jpg" alt=""></li>
+            </ul>          
+        </section>
+        <section>
+            <h3>
+                Rotation d'un menu en CSS3
+            </h3>
+            <article id="menuRotate">
+                <dl class="menu">
+                    <dt class="btnRot">Partager</dt>
+                    <dd><a href="">...</a></dd>
+                    <dd><a href="">Twitter</a></dd>
+                    <dd><a href="">Facebook</a></dd>
+                    <dd><a href="">Mon Site</a></dd>
+                </dl>
+                <div class="masque"></div>
+                <div class="ombre"></div>
             </article>
+            
+                
+                
+            
+
+
         </section>
     </main>
     <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
     <!-- aria acces de contenu web plus faciles pour les handicapés=> https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
     <footer>
         <!-- Footer: zone du bas, ex: les liens administratifs, mentions légales, plan du site etc... -->
-    </footer>
+    </footer>  
 </body>
 
 </html>
