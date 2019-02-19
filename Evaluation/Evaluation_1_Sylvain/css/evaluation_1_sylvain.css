@@ -1,0 +1,245 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} /* fin reset de mayer */
+
+#container{
+    width: 100%;
+    height: 2000px;
+    background-color: rgb(241, 241, 241);
+}
+#header{
+    width: 80%;
+    height: 200px;
+    background-color: rgb(241, 241, 241);
+    margin: 0 auto;
+}
+.headermilieu{
+    width: 60%;
+    height: 230px;
+    background-color: rgb(241, 241, 241);
+    margin: 0 auto;
+    padding: 30px
+}
+.headgauche{
+    width: 40%;
+    height: 140px;
+    float: left;
+}
+.headgauche p{
+    color: black;
+}
+.headgauche span{
+    color: rgb(219, 197, 0);
+}    
+.headdroite{
+    width: 40%;
+    height: 140px;
+    float: right;
+}
+nav{
+    float: right;
+    width: 20;
+    height: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    margin: 10px;
+    padding: 4px;
+    text-align: center;
+    border-left: 1px solid grey; 
+}
+nav span{
+    border-right: 1px solid grey;
+    padding: 4px
+}
+.moncompte{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(197, 197, 197);
+    border-radius: 2px;
+    border: 2px solid gray;
+    display: inline-flex;
+}
+.headdroite p{
+    float: right;
+}
+/* fin header css */
+/* debut main css */
+#main{
+    width: 80%;
+    height: 1450px;
+    background-color: rgb(32, 32, 32);
+    margin: 0 auto;
+}
+#contenu{
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 3px black;  
+}
+.section2{
+    width: 100%;
+    height: 980px;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+.reduc1{
+    width: 5%;
+    height: 40px;
+    background-color: rgb(49, 49, 49);
+    position: absolute;
+    top: 560px;
+    left: 850px;
+    border-radius: 4px;
+}
+.reduc1 p{
+    text-align: center;
+}
+.sect2_1, .sect2_2, .sect2_3, .sect2_4{
+    width: 40%;
+    height: 450px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.616);
+    float: left;
+    margin-left: 60px;
+    margin-top: 30px
+}
+.section2 article{
+    background-color: black;
+    color: aliceblue;
+    height: 30px;
+    width: 40%;
+    margin: 20px;
+    text-align: center;
+    padding: 3px;
+    float: left;
+}
+.section2 span{
+    text-decoration: line-through;
+    margin: 20px;
+    float: left;
+    color: black;
+}
+.section2 p{
+    color: rgb(219, 197, 0);
+    font-size: 30px;
+
+}
+.section3{
+    width: 80%;
+    height: 20px;
+    top: 1600px;
+    margin: 0 auto;
+    background-color: rgb(63, 62, 62);
+    position: absolute;
+}
+/* fin main css */
+/* debut footer css */
+footer{
+    width: 80%;
+    height: 500px;
+    background-color: rgb(63, 62, 62);
+    margin: 0 auto;
+}
+#foot1 ul{
+    background-color: rgb(252, 252, 252);;
+    width: 40%;
+    height: 40px;
+    border-radius: 4%;
+    border: 2px solid gray;
+    margin: 0 auto;
+    display: inline-flex;  
+}
+#foot1 ul li{
+    color: gray;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+hr{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(172, 172, 172);
+}
+#foot1 ul{
+    margin: 0 auto;
+    text-align: center;
+}
+#foot2{
+    width: 60%;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 50px
+}
+.foot2_1, .foot2_2, .foot2_3, .foot2_4{
+    width: 20%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    margin-left: 30px;
+}
+#foot2 p{
+    color: rgb(196, 196, 196);
+    margin-top: 20px;
+}
+#foot3{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    background-color: rgb(63, 62, 62);
+}
+#foot3 a{
+    margin: 0 auto;
+    text-align: center;
+}
+#foot3 p{
+    color: rgb(196, 196, 196);
+    text-align: center;
+}
+.footicon{
+    width: 40%;
+    margin: 10px auto;
+    text-align: center;
+}
