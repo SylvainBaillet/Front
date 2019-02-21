@@ -36,9 +36,9 @@
             clear: both;
             display: table;
         }
-        .clearfix:after {
+        .clearfix::after {
             /* La class clearfix se donne au parent pour qu'il contienne ses flottants pour ne pas qu'ils sortent */
-            content: 'faux footer';
+            content: 'faux footer';/* clearfix  + after permet de positionner la clear apres ainsi que du "content"*/
             clear: both;
             display: table;
         }
