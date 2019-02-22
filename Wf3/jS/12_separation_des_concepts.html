@@ -25,13 +25,13 @@
     var para = document.querySelector('p');
 
     // Ajoute un écouteur d'evenement, cette methode attend 2 arguments, le 1er, l'evenement qu'on attend qui va declencher l'action. On mettra cette action en 2 eme argument. 
-    para.addEventListener('click', changeNom);
+    para.addEventListener('keyup', changeNom);
 
     function changeNom(){
         var nom= prompt('Entre ton prenom');
         para.textContent = 'Ton prenom :' + nom;
     }
-    
+        
     
     </script>
     
