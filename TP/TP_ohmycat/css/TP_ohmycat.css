@@ -1,27 +1,60 @@
-/* header */
-#header{
-    background: darkcyan;
-    height: 10vh;
+body{
+    background: rgb(241, 240, 240);
 }
 
+/* header */
+#header{
+    background-image: url(../img/background.jpg);
+    height: 18vh;
+    color: aliceblue;
+    text-shadow: 1px;
+    text-align: center;
+}
+#header h2{
+    margin-top: 6vh;
+}
+#ohmycat{
+    background: rgb(44, 24, 44);
+    height: 5vh;
+    color: aliceblue;
+}
+#ohmycat h1{
+    margin-left: 20vw;
+}
+#slide{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    max-height: 36vh;
+}
 .slide{
-    background: khaki;
-    height: 10vh;
+    background: rgb(241, 240, 240);
+    height: 40vh;
 }
 .form{
-    background: seagreen;
-    height: 10vh;
+    background:rgb(241, 240, 240);
+    height: 40vh;
+    border: 1px solid grey;
+}
+.btn{
+
+}
+#logo{
+    background:  lightgray;
 }
 .text{
-    background: rosybrown;
-    height: 10vh;
+    background: lightgray;
+    height: 25vh;
 }
 .chat{
-    background: firebrick;
-    height: 10vh;
+    background: lightgray;
+    height: 25vh;
 }
 /* footer */
 .footer{
-    background: sandybrown;
-    height: 10vh;
+    background: rgb(44, 24, 44);
+    height: 4vh;
+}
+.footer h4{
+    text-align: right;
+    color: aliceblue;
 }
