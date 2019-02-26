@@ -5,20 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            font-size:62.5%;
+            /* calcul en regle de 3 pour dire 10px, par rapport au rem (1rem= 16px * 62.5% = 10px) */
+        }
+        body{
+            font: 1.4rem/1.2 arial, helvetica, sans-serif;
+            /* font-size/line height font-family */
+            background-color: royalblue;
+            margin: 0;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            background-color:orange;
+            padding: 1rem;
+            border: 3px black solid;
+        }
+        h1{
+            text-align: center;
+            color: steelblue;
+            text-shadow: 2px 2px gray; 
+        }
+        img{
+            margin: 0 auto; 
+            /* si je ne met que le margin 0 auto, note image ne se centre pas, car la balise image etant une balise inline-block, elle ne reçoit pas les marges, je met donc un display:block */
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1></h1>
-        <img src="" alt="">
-        <p></p>
+    <div class="container">contenu de container
+        <h1>Mozilla est cool !</h1>
+        <img src="images/logo_firefox_1.png" alt="logo firefox">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facere magni dolorum ad voluptatibus qui veniam nobis odit at explicabo. </p>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
         </ul>
-        <p></p>
-        <p>n </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente veniam minima eum non. Laboriosam distinctio sed, voluptas velit vel <a href="#"> Mozilla manifest</a> nostrum blanditiis dicta! Doloremque aliquam animi temporibus debitis maiores aperiam voluptatem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ullam quisquam aliquid excepturi quas itaque cumque dignissimos! Tempore eum quaerat recusandae commodi nulla, maiores nobis voluptatum voluptatem modi aperiam magnam.</p>
+        <button>Changer d'utilisateur</button>
     </div>
-    
+    <script src="JS/20_exo_mozilla_correction.js"></script>
 </body>
 </html>

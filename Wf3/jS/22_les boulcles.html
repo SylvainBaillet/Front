@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Les boucles</h1>
+    <p>Les instructions for et while qui sont deux types de boucles les plus utilisées en JS, servent a repeter plusieurs lignes de code.</p>
+    <h2>La boucle for</h2>
+    <p>For prend 3 parametres encadrés dans des parentheses, suivi entre accolades des instructions a executer autant de fois que la boucle l'indique.les parametres sont</p>
+    <ul>
+        <li>Initialisation: ici on declare la variable qui servira de compteur</li>
+        <li>condition: <strong>Tant que cette condition est vraie</strong>la boulce s'executera</li>
+        <li>Expression finale; expression qui est executée a chaque fin de boucle.</li>
+    </ul>
+    <code>
+        <!-- attention les 3 parametres dans une boucle sont separées par un point virgule ";" -->
+        for (initialisation; condition; incrementation){
+            instruction 1;
+            instruction 2;
+        }
+    </code>
+
+    <script>
+        for(var i=0; i<5; i++){// intialisation 0; condition <5; incrementation ++
+            document.write(i);
+        }
+    /* dans l'ordre, initialisation d'une variable i = 0, puis tant que i est inferieur a 5, on execute la boucle, à chaque fois uqe la boucle s'efectue on incremente de 1. ici la boucle s'execute 5 fois, quand la variable i aura comme valeur 0 , 1 , 2 , 3 , 4*/
+    // a 5 la condition sera fausse et la boucle ne sera pas executée
+
+    // **** autre exemple de boucle ********
+
+    tableau = ["chien", "chat","souris","lapin", "tortue"];
+
+    // un tableau .length nous permettra de recuperer le nombre d'éléments que le tableau contient.
+        // for(var j=0 ; j < tableau.length; j++){
+        //     // affiche chacune des valeurs du tableau
+        //     document.write(tableau[j] + "<br>");
+        // }
+
+    // **** autre exemple de boucle for********
+
+    // convertir tous les objets d'un tableau en majuscule et les afficher.
+        var noms = ["fred", "marie", "nassim", "auguste"];
+        var upper = [];
+
+        for(var k=0, n = noms.length; k<n; k++){
+            // 
+            upper[k] = noms[k].toUpperCase();
+        }
+        document.write(upper);
+
+    // ******Dernier exemple de boucle for********
+        for(var m=0; m<10; m++){
+            alert("m contient la valeur :" + m)
+        }
+
+
+        
+    </script>
+</body>
+</html>
