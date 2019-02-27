@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Que se passe t'il si les variables sont appellées de l'inerieur d'aune autre fonction?  </p>
+
+    <script>
+    // Etape B
+    var x = 1;// La variable x est dans la portée globale
+
+    function a(){
+        var y=2;
+        sortie(y);
+    } 
+    
+    function b(){
+        var z=3;
+        sortie(z);
+    }
+    
+    function sortie(valeur){
+        var para = document.createElement('p');
+        document.body.appendChild(para);
+        
+        para.textContent = 'la valeur est : ' + valeur;
+    }
+    sortie(x);
+    a();
+    b();
+
+    // tout notre code fonctionne bien, car la fonction sortie est appellée a l'interieur des autres fonctions. Dans la portée 'scope' (dans notre metaphore, l'enclos du zoo) dans la portée dans laquelle les variables qu'elles renvoient sont definies.
+
+    // La fonction sortie() est elle meme disponible n'importe ou dans le code car elle est definie dans la portée globale.
+    
+        </script>
+</body>
+</html>

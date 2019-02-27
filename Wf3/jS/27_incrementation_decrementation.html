@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>L'incrementation et la decrementation</h1>
+    <p>sont des raccourcis pour ajouter ou soustraire une valeur a une variable</p>
+    <ul>
+        <li>++x signifie ajouter un a la variable x</li>
+        <li>--x signifie retirer un  a la variable x</li>
+        <li>heure += 4 , signifie ajouter 4 a la variable heure</li>
+        <li>Autres variantes : -=, *=, /=, %=</li>
+    </ul>
+
+    <p>x++ et ++x ont le meme resultat a la difference pres que x++ retourne la valeur de x AVANT d'effectuer l'operation alors que ++x retourne la valeur de x apres avoir effectué</p>
+
+    <script>
+        var x = 5;
+        console.log(x++);
+        // donne 5 en console mais x est maintenant égale a 6
+        console.log(x);
+        // affiche 6 en console
+        console.log(++x);
+        // x est maintenant egal a 7 et donne 7 en console.
+
+        var heure = 5;
+
+        heure++;// heure devient 6
+        console.log('il est :' + heure + 'heures');
+
+        heure+=2; // heure devient 8
+        console.log('il est :' + heure + 'heures');
+        
+        heure/=2// heure devient 4
+        console.log('il est :' + heure + 'heures');
+
+        heure%=3//heure devient 1 car 4 divisé par 3 = 3
+        console.log('il est :' + heure + 'heures');
+
+    
+
+    
+    </script>
+</body>
+</html>

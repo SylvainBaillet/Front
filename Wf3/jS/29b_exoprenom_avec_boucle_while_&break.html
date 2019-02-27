@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exo prenom avec while</h1>
+    <p>ici on va demander a l'internaute son prenom, ainsi que les prenoms des freres et soeurs. On va afficher une boite de dialogue prompt() pour chaque prenom.
+        Comment savoir a l'avance combien il y'aura de freres et soeurs ?</p>
+    <p>Nous allons utiliser  une boucle while qui va demander a chaque passage dans la boule, un prenom supplementaire <br>
+    La boucle s'arretera quand l'utilisateur choisira de ne plus entrer de prenom.</p>
+</body>
+
+<script>
+var prenoms = '', 
+    prenom;
+
+while (true){
+    prenom = prompt('entrez un prenom');
+    // ici on va tester, SI l'ultilisateur entre un prenom dans le prompt, alors on ajoute ce prenom de le tableau 'prenoms', SINON on arete la boucle on sort la boucle en mettant
+    // la variable proceed a FALSE
+    if(prenom){
+        prenoms += prenom +'<br>'; // ajoute le nouveau prenom au tableau prenoms suivi d'un espace.
+    } // fin du IF
+    else{
+        break;
+    }// fin du ELSE //puisqu'aucun prenom n'a été entrén on fait en sorte d'invalider la condition en mettant BREAK qui nous fait sortir de la boucle
+} //fin de la boucle while
+document.write(prenoms);
+</script>
+</html>

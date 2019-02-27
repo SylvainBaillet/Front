@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>La portée des fonctions et les conflits</h1>
+    <p>La portée est un concept tres important en javaScript lorsqu'on a affaire a des fonctions. <br>
+        Quand on créé une fonction, les variables et autres choses qui sont definies a l'interieur de la fonction  ont leur propre portée, Ce qui signifie qu'elles sont enfermées dans leur propre compartiment, séparé, et qu'elles ne peuvent pas etre effectuées par d'autres fonctions ou par le code en dehors de la fonction. (metaphore du zoo, chaque animal a son propre enclos, la portée de la fonction.)</p>
+    <p>Le plus haut niveau en dehors de toutes vos fonctions est appellé la portée globale? Les valeurs definies dans la portée globale sont accessibles a partir de n'importe quelle partie du code, (le gardien du zoo qui a toutes les clés</p>
+    <p>Le javaScript est construit de cette façon pour plusieurs raisons, et en particulier pour la securité et l'organisation. <br> 
+    Parfois vous ne voulez pas que vos variables soient accessibles depuis toutes les autres parties du code. des scripts externes appellés depuis l'exterieur de votre fonction pourraient interferer avec votre code et causer des problemes parcequ'ils utilisent les memes noms de variables que d'autres parties du code, provoquant des conflits. Peut etre fait par malveillance ou , par accident.</p>
+    <p>Par exemple ici, on a un fichier html qui appelle deux fichiers javaScript externes, et que les deux ont une variable et une fonction definie qui utilisent le meme nom.</p>
+    
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+    <script>
+        // on invoque la fonction ditSalut qui peut etre aussi bien definie dans un script interne que dans un script externe
+        ditSalut(); //ce sont les parentheses qui executent la fonction
+
+    
+    </script>
+</body>
+</html>

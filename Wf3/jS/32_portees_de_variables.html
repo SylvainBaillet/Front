@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>On va creer deux fonctions appellées a() et b() , et 3 variables, les variables x, y et z , deux d'entre elles seront definies a l'interieur de la fonction, et l'autre sera definie dans la portée globale. <br> On aura une troisieme fonction qu'on va appeller sortie() qui prend un seul parametre et qui le renvoie dans un paragraphe de la page. </p>
+
+    <script>
+    // Etape A
+    // les regles de portées ne s'appliquent ni aux boucles (for, while) ni aux conditions (If Else, etc...).
+    var x = 1;// La variable x est dans la portée globale
+
+    function a(){
+        var y=2;//les variables y et z sont dans des portées locales car elles sont dans des fonctions.
+    } 
+    
+    function b(){
+        var z=3;
+    }
+    // declaration de la fonction qui attend un parametre (ici 'valeur')
+    function sortie(valeur){
+        var para = document.createElement('p');//on créé un noeud 'p'(node) qui est objet du document.
+        document.body.appendChild(para);// ajoute ce node comment enfant de la balise body
+        // puis on créé le node de texte, contenu de texte de notre balise 'p' avec la methode 'textContent'. (On pourra aussi utiliser innerHtml)
+        para.textContent = 'la valeur est : ' + valeur;
+    }
+    // sortie(x);// comme x est  dans la portée globale, on y a bien acces et donc le paragraphe créé par la fonction 'sortie' affiche bien la valeur 1 de x. Vous devez normalement voir la valeur de la variable x.
+    sortie(y);
+    // sortie(y); et sortie(z); renvoient un message d'erreur du type 'ReferenceError: z is not defined' Pourquoi?
+    /* A cause de la portée de fonction, y et z sont enfermés dans les fonctions a() et b() , donc la fonction sortie() ne peut pas les atteindre lorsqu'elles sont appellées depuis la portée globale */ 
+        </script>
+</body>
+</html>

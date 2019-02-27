@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    // Etape C
+    var x = 1;// La variable x est dans la portée globale
+
+    function a(){
+        var y=2;
+        sortie(z);
+    } 
+    
+    function b(){
+        var z=3;
+        sortie(y);
+    }
+    
+    function sortie(valeur){
+        var para = document.createElement('p');
+        document.body.appendChild(para);
+        
+        para.textContent = 'la valeur est : ' + valeur;
+    }
+    sortie(x);
+    a();
+    b();
+    // Cette fois, l'appel de a() et b() renverra l'erreur 'ReferenceError: z is not defined (pour y aussi) parceque l'appel des fonctions sorties et des variables que j'essaye d'afficher ne sont pas definies dans les memes portées. Les variables sont en effet invisibles pour ces appels de fonctions
+    // Le message d'erreur 'ReferenceError: z is not defined' est l'un des plus courant que vous pourrez rencontrer, si il s'affiche et que vous etes surs d'avoir defini la variable en question, verifiez quelle est sa portée.
+    // les regles de portées ne s'appliquent ni aux boucles (for, while) ni aux conditions (If Else, etc...).
+    </script>
+</body>
+</html>
