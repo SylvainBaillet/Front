@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <!-- css BS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/TP_ohmycat_correction.css">
+    <title>ohmycat_correction</title>
+</head>
+<body>
+    <!-- la class container fluid prends tout l'espace de la page du navigateur. -->
+    <div class="container-fluid">
+        <header>
+            <!-- je declare une ligne BS -->
+            <div class="row">
+                <!-- Avec sa class col, BS va occuper l'espace dont l'element a besoin. Par consequent si je ne met qu'un élément celui ci va occuper les 12 colonnes BS. Par contre si j'ajoute plusieurs éléments dans la class col. BS va repartir les colonnes selon l'espace necessaire a chaque élément. -->
+                <div class="col">
+                    <nav>
+                        <div class="row">
+                            <!-- La classe offset permet de decaler l'emplacement de mon element. contrairement a la classe order, la class offset n'agit pas sur la reorganisation des éléments mais les decale simplement. -->
+                            <div class="col-md-3 offset-md-3 " id="ohmycat">
+                                <a href="#">Ohmycat</a>
+                            </div>
+                        
+                        </div>
+                        <a href="#"></a>
+                    </nav>
+                    <div class="row">
+                        <!-- lorsque l'ecran devient de taille moyenne,il prend automatiquement les 12 colones d'espaces  -->
+                        <div class="col" id="titre">
+                            <h2>Adoptez un chat trop bon</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Dans le cas present, nous avons declaré deux sections afin de leur attribuer des bg differents -->
+        <main>
+            <section id="formslide">
+                <!-- la class container de BS permet de centrer les éléments dans notre page -->
+                <div class="container">
+                    <div class="row">
+                        <!-- la classe col-md-9 me permet de definir le nombre de colonnes que je vais attribuer a mon élément! et avec la class order-md-4je force le BS a positionner l'element a partir de la 4eme colonne -->
+                        <div class="col-md-9 order-md-4" id="slide">
+                            <div class="bd-example">
+                                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/chat_1.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Sushi</h5>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/chat_2.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Maki</h5>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/chat_3.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Sashimi</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/chat_4.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Yakitori</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/chat_5.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Onigiri</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            </div> 
+                            <!-- fin  -->
+                            <div class="col-md-3 order-md-1" id="form">
+                                <form> <!-- DEBUT Formulaire -->
+                                    <div class="form-group">
+                                        <h3>Les chats a adopter</h3>
+                                        <label for="exampleFormControlSelect1">Choix du chat</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Raison d'adoption</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-success mb-3 btn-block">Envoyer</button>
+                                    <!-- on rajoute la class 'btn-block' pour mettre le bouton prenant toute la place de la class col -->
+                                </form><!-- FIN Formulaire -->
+                                
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section id="logo">
+                <!-- FIN 1ere SECTION -->
+                <!-- 2eme SECTION -->
+                <div class="container">
+                    <div class="row">
+                        <!--  -->
+                        <div class="col-md-9" id="texte">
+                            <h3>Nos chats a dopter</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, nostrum quisquam deserunt perferendis optio labore voluptate asperiores explicabo iure soluta corporis. Et soluta, excepturi facere temporibus placeat ex saepe? Inventore.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, velit optio? Praesentium fugiat sed magni totam maiores at. Facere minus dolor expedita voluptate delectus, eligendi nisi exercitationem minima nulla nemo!</p>
+                        </div>
+                        <div class="col-md-3" id="chat">
+                            <img src="img/tete-chat.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    
+</body>
+</html>

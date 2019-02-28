@@ -1,0 +1,19 @@
+Police des titres :
+    https://fonts.google.com/specimen/Merienda
+Couleurs : 
+    navbar : #061339
+    premier bloc : #B9CDFF + background
+    titre h1 : #FFF
+    autres titres : #2F4073
+    footer : #061339
+    tête chat défaut : #7885A5
+    tête chat hover : #061339
+Réduire
+
+
+
+
+Vitry2018 a le vent en poupe
+Votre équipe est maintenant composée de 18 membres et a échangé 2912 messages dans 11 chaînes. Vous pouvez suivre la progression de votre équipe via le menu principal.
+Me montrer
+Zone de message
