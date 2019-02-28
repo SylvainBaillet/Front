@@ -1,3 +1,8 @@
+body{
+    margin: 0 auto;
+    width:80%;
+    background-color: bisque;
+}
 .container{ 
     margin-top: 50px;
     width: 1200px;
@@ -40,8 +45,21 @@
 .asperges{
     transform:scaleX(-1);
 }
+#asp{
+    width: 500px;
+    height: 400px;
+}
+#moul{
+    height: 400px;
+}
+#soa{
+    height: 400px;
+}
 .eggs{
     width: 100%;
+}
+#egg{
+    height:500px;
 }
 img{
     max-width: 100%;
