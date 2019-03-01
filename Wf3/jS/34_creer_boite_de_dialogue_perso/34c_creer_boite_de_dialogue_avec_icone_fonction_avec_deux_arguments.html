@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: green;
+        }
+        .msgBox{
+            width: 242px;
+            /* height: 400px; temporaire */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }    
+        .msgBox button{
+            background-color: grey;
+            position: absolute;
+            top: .5rem;
+            right: .5rem;
+        }
+        .msgBox p{
+            background-repeat: no-repeat;
+            background-position: 5px center;
+            padding: 10px 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- On retire la div ici , car on va la generer dynamiquement en javaScript -->
+    <!-- <div class="msgBox">
+        <p>Message</p>
+        <button>X</button>
+    </div> -->
+    <button id="btnAfficheDialog">je suis une boite de dialogue</button>
+
+    <script>
+        /* Si la msgType a la valeur 'warning', alors  l'icone warning sera affichée comme background image du msg, et le panel prendra la couleur d'arriere plan rouge.
+         Sinon le msgType a la valeur 'chat', alors l'icone chat sera affichée et le panel prendra la couleur d'arriere plan bleu turquoise.
+        Si le parametre msgType n'a pas de valeur du tout, alors, le paragraphe prendra un padding par defaut et il n'y aura ni icone ni couleur d'arriere plan
+        1ere etape construisez les if avec les instructions suivantes:
+        //Si (le msgType a la valeur de 'warning)
+        */
+
+        var btnOpenBox = document.getElementById('btnAfficheDialog');
+        function afficheMessage(msgText, msgType){
+
+            // dans une variable nommée html on selectionne la balise html dans le DOM
+            var body = document.querySelector('body');
+            // dans une variable boiteDialogue, on créé un objet div, avec la methode createElement
+            var boiteDialogue = document.createElement('div');
+            // Ajouter a cette boiteDialogue l'attibut class'msgBox' avec la methode setAttribute('nomde l'attribut' , 'nouvelleValeur')
+            // les deux parametres attendus 1- nom de l'attribut: on mettra class || 2- nouvelle valeur: on mettra msgBox
+            boiteDialogue.setAttribute('class','msgBox');
+            body.appendChild(boiteDialogue);
+            // creer une variable pMessage qui créé un objet paragraphe 'p'
+            var pMessage = document.createElement('p');
+            // ajouter a cet objet pMessage le contenu texte suivant: 'je suis une boite de dialogue' avec la methode textContent
+            pMessage.textContent = msgText;
+            // et ajoute ce pMessage comme enfant de la boiteDialogue créée tout a l'heure.
+            boiteDialogue.appendChild(pMessage);
+            // creer une variable closeBtn qui contient un nouvel objet virtuel button, 
+            var closeBtn = document.createElement('button');
+            // ajouter a cet objet le contenu texte 'X'
+            closeBtn.textContent = 'X';
+            // donner a l'objet boiteDialogue cet enfant closeBtn
+            boiteDialogue.appendChild(closeBtn);
+            // pour fermer la boite de dialogue
+            closeBtn.addEventListener('click', function(){
+                boiteDialogue.parentNode.removeChild(boiteDialogue);
+                // au clic sur le bouton de la boite de dialogue, le parent"body, retire son enfant (la boite de dialogue)
+            })
+            
+            /*Si le msgType a la valeur 'chat' alors l'icone chat sera affichée comme background-image du message et la couleur d'arriere plan de la boite de dialogue sera bleue.
+            Sinon, si le msgType a la valeur'warning' alors l'icone warning sera affichée comme background-image du message et la couleur d'arriere plan de la boite de dialogue sera rouge*/
+
+            /*Exo a faire, si msgType a la valeur chat, alors on affiche une alert 'chat' sinon on affiche alert 'warning'*/
+            if (msgType == 'chat'){
+                alert('chat');
+                pMessage.style.backgroundImage = 'url(images/chat.png)';
+                boiteDialogue.style.backgroundColor = 'steelblue';
+                // alors on affiche l'image de fond 'chat.png' comme backgoundImage de pMessage
+            }
+            else if(msgType == 'warning'){
+                alert('Attention');
+                pMessage.style.backgroundImage = 'url(images/warning.png)';
+                boiteDialogue.style.backgroundColor = 'darkred';
+                boiteDialogue.style.color = 'white';
+            }
+            else {
+                alert('bug');
+            }
+        }//fin de la fonction afficheMessage()
+        // ajouter a btnOpenBox un eventListener qui au clique declanche la fontion afficheMassage()
+
+        /* ici les parnthese qui suivent declenchant la fonction sans attendre le clic, pour eviter ça, on va faire une 2eme version de cette fonction si dessous*/
+        // btnOpenBox.addEventListener('click', afficheMessage('le nouveau texte de la boite'));    
+           btnOpenBox.addEventListener('click', function(){
+                // ici on a deux arguments envoyées a la fonction afficheMessage( ses deux arguments sont bien séparés par une ',') 
+            //    afficheMessage('salut on tchat?' , 'chat');
+               afficheMessage('Attention ta boite de dialogue est pleine', 'warning');
+            //    afficheMessage('', '');
+            }) 
+          /* si nous voulons specifier des parametres  pour la fonction que nous appellons (ici fonction afficheMessage , Alors nous ne pouvons pas l'invoquer directement? nous avons besoin de la mettre a l'interieur d'une fonction anomyme.(elle n'est pas dans la portée immediate et n'est donc pas appelée immediatement.
+          Maintenant, elle ne sera pas appellée tant que le bouton n'est pas cliqué.) */   
+    </script>
+</body>
+</html>

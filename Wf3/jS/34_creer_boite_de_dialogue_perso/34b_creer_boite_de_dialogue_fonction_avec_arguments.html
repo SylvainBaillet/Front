@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            background-color: aqua;
+            background-color: green;
         }
         .msgBox{
             background-color:rgb(255, 108, 108);
@@ -17,11 +17,13 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-        }
+        }    
+        
         .msgBox p{
             background-color: rgb(255, 108, 108);
             padding: 10px 20px;
             color: black;
+            float: left;
         }
         .msgBox button{
             background-color: grey;
@@ -29,11 +31,7 @@
             top: .5rem;
             right: .5rem;
         }
-        .warning{
-            background: url('images/warning.png');
-            width: 2rem;
-            height: 2rem;
-        }
+        
     </style>
 </head>
 <body>
@@ -53,11 +51,7 @@
         */
 
         var btnOpenBox = document.getElementById('btnAfficheDialog');
-        function afficheMessage(){
-
-            var warning = document.createElement('img');
-            boiteDialogue.setAttribute('class', 'warning');
-            boiteDialogue.appendChild(warning);
+        function afficheMessage(msgText){
 
             // dans une variable nommée html on selectionne la balise html dans le DOM
             var body = document.querySelector('body');
@@ -70,7 +64,7 @@
             // creer une variable pMessage qui créé un objet paragraphe 'p'
             var pMessage = document.createElement('p');
             // ajouter a cet objet pMessage le contenu texte suivant: 'je suis une boite de dialogue' avec la methode textContent
-            pMessage.textContent = 'Attention la boite de dialogue est pleine';
+            pMessage.textContent = msgText;
             // et ajoute ce pMessage comme enfant de la boiteDialogue créée tout a l'heure.
             boiteDialogue.appendChild(pMessage);
             // creer une variable closeBtn qui contient un nouvel objet virtuel button, 
@@ -82,12 +76,18 @@
             // pour fermer la boite de dialogue
             closeBtn.addEventListener('click', function(){
                 boiteDialogue.parentNode.removeChild(boiteDialogue);
-                
+                // au clic sur le bouton de la boite de dialogue, le parent"body, retire son enfant (la boite de dialogue)
             })
         }//fin de la fonction afficheMessage()
         // ajouter a btnOpenBox un eventListener qui au clique declanche la fontion afficheMassage()
-        btnOpenBox.addEventListener('click', afficheMessage);    
-            
+
+        /* ici les parnthese qui suivent declenchant la fonction sans attendre le clic, pour eviter ça, on va faire une 2eme version de cette fonction si dessous*/
+        // btnOpenBox.addEventListener('click', afficheMessage('le nouveau texte de la boite'));    
+           btnOpenBox.addEventListener('click', function(){ 
+               afficheMessage('le nouveau texte de la boite');
+            }) 
+          /* si nous voulons specifier des parametres  pour la fonction que nous appellons (ici fonction afficheMessage , Alors nous ne pouvons pas l'invoquer directement? nous avons besoin de la mettre a l'interieur d'une fonction anomyme.(elle n'est pas dans la portée immediate et n'est donc pas appelée immediatement.
+          Maintenant, elle ne sera pas appellée tant que le bouton n'est pas cliqué.) */   
     </script>
 </body>
 </html>
