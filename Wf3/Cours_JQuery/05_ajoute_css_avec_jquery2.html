@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        section{
+            border: 2px crimson solid;
+            width: 70%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    
+    </style>
+</head>
+<body>
+    <section>
+        ici contenu de section
+    </section>
+    <p class="resultat"></p>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){ // on charge le scope jquery
+            console.log('jquery est bien chargé');
+            // on selectionne la balise section avec jquery et avec la methode .css, on peut ajouter du css via jquery
+            //$('section').css('background-color','gold'); // cette methode n'est pas recommandée, la decoration se fait dans la feuille de style
+            //  plus interessant, on va ajouter un backgroud-color, au clic sur la balise section
+            $('section').on('click',function(){
+                //dans les accolades, on ecrira tout ce qu'on veut faire lors du clic sur la balise section
+                // $(this).css('background-color', 'gold' );//ajoute une proprieté a la section, pour en rajouter plusieurs, il faut mettre des accolades
+                $(this).css({
+                    //ici on va utiliser un array (un tableau), attention, on a ':' entre chaque proprieté puis valeur css, et a chaque fin de ligne, une virgule
+                    "background-color": "orange",
+                    "font-size": "2rem"
+                })
+                //ici on recupere dans la variable couleur la valeur de couleur de fond de this
+                var couleur = $(this).css("background-color");
+                //on affiche cette valeur dans la console
+                console.log(couleur);//la console affiche les valeurs rgb 
+
+                // selectionner la balise p qui a la class resultat
+                $('.resultat').html('la couleur de fond de section ' + couleur);
+
+                
+            })//fin du click sur la balise section
+        }) //Fin du scope jquery
+    </script>
+</body>
+</html>

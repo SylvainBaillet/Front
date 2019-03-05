@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Cliquez-moi</button>
+    <!-- on charge jquery -->
+    <script src="js/jquery-3.3.1.min.js">
+    </script>
+    <script>
+    // on va charger le scope de Jquery
+    $(function(){
+        // dans $ (function(){}) on aura tout le scope jquery
+        // ne rien faire avant d'avoir testé en console la ligne suivante, et de lire cette phrase dans la console.
+        console.log('jquery est bien chargé');
+
+        var action =function(){
+            alert('tu as cliqué');
+        }
+        $('#btn').on('click',action);
+
+    })// fin du scope jquery
+    </script>
+    
+</body>
+</html>

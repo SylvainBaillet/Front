@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="titre">Mon titre</h2>
+    <button id="go">Go</button>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log('jquery est chargé');
+
+        $('#go').click(function(){
+            $('titre').animate({
+                marginLeft: '200px',
+                fontSize: '5em',
+                opacity: '0.4'
+            },1000)
+        })
+           
+        })//fin du scope
+    </script>
+</body>
+</html>

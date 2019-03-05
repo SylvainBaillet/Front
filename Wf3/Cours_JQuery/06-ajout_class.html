@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tailleTextex2{
+            font-size: 2em;
+        }
+        .couleurFond{
+            background-color:aquamarine;
+        }
+        .carre{
+            width: 200px;
+            height: 200px;
+            background-color: forestgreen;
+            margin-top: 50px;
+            transition: 1s;
+            
+
+            /* on met la transition dans la class 'carre' et non pas dans la class 'tourne' pour qu'elle reste active apres qu'on est retiré la class */
+        }
+        .tourne{
+            background-color: brown;
+            transform: rotate(.5turn ) scale(.5);
+            /* .5turn va rotationer le carré a 180 degres, scale .5 reduire son echelle de moitié */
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <strong>Je suis un texte gras</strong>
+    <em>Je suis de l'italique</em>
+    <u>Je suis du texte souligné</u><br>
+    <button>Retire la class</button>
+    <div class="carre">Contenu du carré</div>
+    
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log('jquery est chargé');
+
+            // selectionner la balise 'u' et lui donner la class .tailleTextex2 avec la methode jquery qui s'appelle .addClass
+            $('u').addClass('tailleTextex2');
+
+            // au click sur la balise <em>, ajouter la class .couleurFond a la balise strong
+            $('em').on('click', function(){
+                $('strong').addClass('couleurFond');
+            }) 
+            //methode removeClass pour retirer une class d'un élément, ici au click sur le bouton, on retire la class a la balise 'u'
+            var retireClass = function(){
+                $('u').removeClass();
+            }
+            $('button').on('click', retireClass);
+
+            // on va faire une fonction tourneCarre qui sera executée au click sur le carre, cette fonction ajoute la class 'tourne' au carré
+            var tourneCarre = function(){//ici on declare la fonction 'tourneCarre'
+                $(this).toggleClass('tourne');// 'toggleClass' permet d'activer la classe puis de la retirer au deuxieme click et ainsi de suite
+            }//puis on execute la fonction au click sur la balise .carre
+            $('.carre').on('click',tourneCarre);
+            
+        })//Fin du scope jquery
+    
+    </script>
+</body>
+</html>  
