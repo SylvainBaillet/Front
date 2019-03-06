@@ -77,7 +77,7 @@
         </ul>
     <p>Tous les éléments selectionnés en javaScript pur (document.getElementById, querySelector etc...) sont des elements DOM et tous ceux selectionnés avec $ ('') sont des elements DOM dans une enveloppe jQuery</p>    
 
-    <h3>jQuery dispose de plusieursmethodes pour parcourir l'arbre du document (le DOM)</h3>
+    <h3>jQuery dispose de plusieurs methodes pour parcourir l'arbre du document (le DOM)</h3>
 
     <ul>
         <li>children() parcourt les enfants</li>
@@ -86,6 +86,43 @@
         <li>prev() renvoie le voisin precedent</li>
         <li>parent() renvoie le parent</li>
         <li>eq() renvoie parmi une liste d'elements, celui qui se trouve a l'index fourni</li>
+    </ul>
+
+    <hr>
+
+    <h2>Les Getters et Setters, ajouter, retirer des classes et savoir si on a deja des class</h2>
+
+    <ul>
+        <li>addClass() , ajoute une class</li>
+        <li>removeClass() , retire une class</li>
+        <li>toggleClass() , interrupteur, ajoute/retire une class</li>
+        <li>hasClass() , tester l'existence d'une class</li>
+        <li>is() , tester si on a plusieurs class</li>
+    </ul>
+
+    <hr>
+
+    <h2>Les évènements</h2>
+    <p>La plupart des interactions de l'utilisateur avec la page web, peuvent e^tre interceptées et une action lancée en retour</p>
+    <p>On peut dire a une fonction de s'executer quand l'utilisateur clique sur un bouton, ou bien quand il scrolle dans la fenetre ou encore quand il appuie sur une touche du clavier</p>
+
+    <ul>
+        <li>Mouse(souris): <br>
+             click :au clic sur l'élément <br>
+             mouseenter: lorsque la souris spasse par dessus la zone de lélément <br>
+             mouseleave: lorsque la souris sort de sa zone </li>
+        <li>Keyboard (le clavier) <br>
+             keydown : une touche de clavier qui a été enfoncée <br>
+             keyup : une touche de clavier a été relachée</li>
+        <li>Window (le fenetre du navigateur) <br>
+             scroll : defilement de la fenetre <br>
+             resize : redimensionnement de la fenetre </li>
+        <li>form (les formulaires) <br>
+             change : pour les éléments &lt;input&gt;, &lt;select&gt; et &lt;textarea&gt;, quand l'utilisateur change une de leur valeur <br>
+             focus et blur : lorsque la souris est dans l'input ou sort de l'input <br>
+             submit : a l'envoi du formulaire </li> 
+        <li>Document (le contenu DOM) <br>
+             DOMContentLoaded : lancé lorsque le document HTML est completement chargé et analyse sans attendre que les images et le CSS soient chargés </li>         
     </ul>
 
     

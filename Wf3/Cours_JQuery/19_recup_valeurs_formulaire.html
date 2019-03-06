@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" id="monFormulaire">
+        <fieldset>
+            <!-- visuel permetant d'entourer le formulaire d'une trait fin -->
+            <legend>Infos-pro</legend>
+
+            <label for="prenom">Votre prenom</label>
+            <input type="text" id="prenom" >
+            <br>
+           
+            <h4>
+                <label for="motdepasse">Votre mot de passe</label>
+            </h4>
+            <input type="password" id="motdepasse" >
+            <br>
+
+            <h4>
+                <label for="date">Votre date de rendez-vous</label>
+            </h4>
+            <input type="date" id="date">
+            <br>
+
+            <strong>Genre</strong> <br>
+                <label for="homme">Homme</label>
+            <!-- la balise label ici me permet de cliquer autant sur le label  "homme" ou "femme" autant que sur les boutons radio -->
+                <input type="radio" id="homme" value="homme" name="genre">
+                <label for="femme">Femme</label>
+                <input type="radio" id="femme" value="femme" name="genre">
+                <br>
+
+            <h4>
+                <label for="statut">Selectionne ton statut</label> <br>
+            </h4>
+            <select name="statut" id="statut">
+                <option value="etudiant">Etudiant</option>
+                <option value="enseignant">Enseignant</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <h4>Choix de couleurs</h4>
+                
+                    <input type="checkbox" id="orange" name="couleurs" checked>
+                    <label for="violet">Violet</label>
+                    <input type="checkbox" id="violet" name="couleurs">
+                    <label for="orange">Orange</label>
+            <br>        
+                
+
+            <input type="reset" id="annuler" value="annuler"> 
+             <!-- ne pas mettre le bouton annuler a droite, notre sens de lecture naturel est de gauche a droite, et lorsqu'on utilise un formulaire la derniere action que l'on fait (envoyer) est a droite -->
+            <input type="submit" id="envoyer" value="envoyer">  
+
+
+        </fieldset>
+    </form>
+    <div class="info">
+        <p></p>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log('jquery est bien chargé');
+
+            // pour lire le prenom entré dans l'input qui a l'id="prenom" et l'afficher en console.
+            // console.log($('#prenom').val()); 
+
+            //creer l'evenement on submit et stopper la redirection
+            $('#monFormulaire').on('submit', function(ev){
+                // pour stopper la redirection on va intercepter l'evenement, attention a bien indiquer le parametre 'ev' dans les parentheses de la fonction: fonction(ev) au dessus
+                ev.preventDefault();// preventDefault empeche de faire l'action prevue
+                console.log($('#prenom').val());// ici en remplissant le champ 'prenom' et en cliquant sur submit, le formulaire est intercepté et ne sera pas envoyé. par contre je recupere les valeurs dans la console. 
+                console.log($('#motdepasse').val()); //lit et affiche le mot de passe
+                console.log($('#statut').val()); //lit et affiche la valeur de statut
+                console.log($(':radio:checked').val());//renvoie la valeur du bouton qui est coché
+
+                // $(':radio').val(['homme']); //selectionne le bouton radio homme
+
+                // 1 -creer une balise 'p', 
+                // 2 -la remplir avec la string: 'bonjour'  concatainée avec la valeur de l'input #prenom
+                // 3 -ajouter cette balise a body
+                $('<p>').append('bonjour ' + $('#prenom').val()).appendTo('.info');
+                   //pour creer une balise '<p>' par exemple, il faut bien penser a mettre les "<>" , si on avait juste mis 'p' on lui demande juste de selectionner le 'p', ça ne créé pas une balise. 
+
+                   //creer autant de paragraphes que de champs dans le formulaire pour les faire afficher dans la div .info (comme ci dessus)
+                $('<p>').append('votre Mot de passe est: ' + $('#motdepasse').val()).appendTo('.info'); 
+                $('<p>').append('la date du rendez vous est le: ' + $('#date').val()).appendTo('.info');   
+                $('<p>').append('votre sexe est: ' + $(':radio:checked').val()).appendTo('.info');
+                $('<p>').append('votre statut est: ' + $('#statut').val()).appendTo('.info');
+                $('<p>').append('votre choix de couleur est: ' + $(':checkbox:checked').val()).appendTo('.info'); 
+                
+
+            })//fin de l'evenement submit
+
+        })//Fin du scope jQuery
+    </script>
+</body>
+</html>

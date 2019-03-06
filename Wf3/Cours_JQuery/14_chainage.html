@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .vert{
+            color: green;
+        }
+        .rouge{
+            color: red;
+        }
+        .grand{
+            font-size: 2em;
+        }
+        .petit{
+            font-size: .8em;
+        }
+        div{
+            background-color: royalblue;
+        }
+        .pJaune{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="pierre" class="grand vert">Pierre</p>
+    <p id="jean" class="petit rouge">Jean</p>
+    <div>Ma boite</div>
+    <article>Mon super article</article>
+    <p class="pJaune">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi magnam autem facere et consectetur quae tempora, id quis. Eligendi ratione at repellat incidunt quo odio atque perspiciatis? Dignissimos, alias veniam!</p>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log('jquery est bien chargé');
+        // $('#pierre').removeClass('vert grand').addClass('rouge petit'); 
+
+        //faire l'instruction au clic sur #pierre
+           $('#pierre').click(function(){
+                $(this).removeClass('vert grand').addClass('rouge petit');
+           })
+
+           $('#jean').click(function(){
+               //Si #jean a la class rouge, alors on fait une alerte qui affiche 'jean est rouge' sinon, on fait une alerte qui affiche 'jean n'est pas rouge'
+               if($(this).hasClass('rouge'))
+                    alert('Jean est rouge')
+                    else
+                    alert('Jean n\'est pas rouge');// ici le antislash "\" permet que le guillemet entre les guillemets soit traité comme faisant partie de la chaine de caractère
+           })
+
+        // la methode hide permet de cacher un élément, c'est une animation qui s'applique sur tous les éléments ciblés avec le selecteur. A la fin du hide, on mettra une alerte.
+        /* ici le div disparait en 2 secondes, une fois que sa disparition est terminée, on declenche une fonction callback qui s'execute quand l'action est terminée, , dans cette fonction on cache l'article,on lui met du css avec une color,  la durée de disparition est de 1 seconde (1000) , puis on fait réaparaitre ensuite l'article avec un 'show d'une demi seconde*/
+        // apres que toute la fonction a été executée, on affiche une alerte (fin du hide)
+           $('div').hide(2000,function(){
+                $('article').hide(1000).css('color', "coral").delay(2000).show(500);
+                
+           });//fin du hide
+
+           $('.pJaune').fadeOut('slow', function(){//j'ai appliqué un parametre 'slow mais j'aurais pu mettre une valeur en millisecondes comme plus bas
+               //on ajoute une fonction de callback qui sera executée une fois que la fonction de fadeout sera terminée
+               $(this).fadeIn(2000, function(){//ici on a une fonction anonyme de callback qui s'execute quand le fadeIn est terminé
+                   alert('Fin du fadeIn');  
+               });
+           });
+         
+
+    })//fin du scope
+    </script>
+</body>
+</html>

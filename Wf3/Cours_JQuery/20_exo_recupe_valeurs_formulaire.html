@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%; /* base 10px */
+        }
+        body, input, textarea{
+            font-family: Arial, Helvetica, sans-serif;
+            font: 1.4rem/1.5;/* apres le slash "/" c'est la valeur de la line-height */
+        }
+        #monForm{
+            width: 60%;
+            background: skyblue;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+        #monform fieldset{
+            border: 1px dashed silver;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+        }
+        #monform fieldset legend{
+            background: skyblue;
+            padding: 1rem;
+        }
+        #monForm input, #monForm textarea{
+            width: 100%;
+            margin:  5px 0;
+        }
+        #monForm{
+            margin-top: .5rem;
+            margin-bottom: 0;
+        }
+    
+    </style>
+</head>
+<body>
+    <form action="#" method="GET" id="monForm">
+        <fieldset>
+            <legend>Mes infos persos</legend>
+            <p>
+                <label for="nomComplet">Nom et prenom</label>
+                <input type="text" id="nomComplet" placeholder="nom et prenom">
+            </p>
+            <!-- 1 - creer un imput de type =email avec l'id=email, 
+                2 - un input de type tel avec l'id=tel,
+                3 - un input de type text avec l'id=sujet,
+                4 - zone de message (textarea) avec l'id message,
+                5 - creer un bouton de submit avec la valeur 'envoyer mon message'
+                6 - Avec jQuery  afficher a l'utilisateur un récapitulatif contenant toutes les valeurs du formulaire (des 'p' affichés les uns apres les autres dans 'body')  -->
+            <p>
+                <label for="eMail">Email</label>
+                <input type="text" id="eMail" placeholder="Saisissez votre email">
+            </p>
+            <p>
+                <label for="tel">Telephone</label>
+                <input type="text" id="tel" placeholder="Saisissez votre numero de telephone">
+            </p>
+            <p>
+                <label for="sujet">Sujet</label>
+                <input type="text" id="sujet" placeholder="Indiquez le sujet de votre texte">
+            </p>
+            <p>
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" rows="6"></textarea>
+            </p>
+            <p>
+                <input type="reset" id="annuler" value="annuler">
+                <input type="submit" id="envoyer" value="envoyer mon message">
+            </p>
+        </fieldset>
+    </form>
+    <div class="info"></div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log('jquery est bien chargé');
+
+            //
+            $('#monForm').on('submit', function (ev){
+                ev.preventDefault();
+            $('<p>').append('bonjour ' + $('#nomComplet').val()).appendTo('.info');
+            $('<p>').append('votre email est :' + $('#eMail').val()).appendTo('.info');
+            $('<p>').append('votre numero de telephone est :' + $('#tel').val()).appendTo('.info');
+            $('<p>').append('le sujet de votre texte est :' + $('#sujet').val()).appendTo('.info');
+            $('<p>').append('voici votre texte :' + $('#message').val()).appendTo('.info');
+        })//fin de l'evenement submit    
+
+        })//Fin du scope jQuery
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img class="cible" src="images/slide1.jpg" alt="">
+    <p class="info"></p>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log('jquery est bien chargé');
+            
+            $('.cible').mousedown(function(ev){
+                //lors du clic sur l'image, il va d'abord afficher 'coucou!' dans le paragrapho .info
+                // $('.info').html('coucou!');
+
+                //etape 2 : affiche dans .info le type d'evenement qui survient, en préalable, ajouter un parametre, 'ev'  pour event dans les parentheses de la declaration de fonction
+                // $('.info').html(ev.type);//affiche le type d'evenement (mousedown) dans le p .info
+                
+                // $('.info').html(ev.which);//affiche le numero de bouton de la soucis
+                //bouton 1= btn gauche de la souris | bouton 2= btn central | bouton 3= btn droit de la souris 
+
+                //au final on va afficher dans .info la concatenation du type et du which
+                $('.info').html('evenement: ' +ev.type + '<br>' + 'bouton pressé: ' + ev.which);
+            })
+        
+        
+        
+        
+        
+        
+        })//fin du scope jQuery
+    </script>
+</body>
+</html>
