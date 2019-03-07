@@ -1,0 +1,110 @@
+body{
+    background: forestgreen;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.4rem/1.5 arial, helvetica, sans-serif;
+    margin: 0;
+}
+.list_unstyled{
+    padding-left: 0;
+    list-style: none;
+}
+header{
+    background: url(img/dinosaure.jpg)no-repeat 50% -160px;
+    /* 50% pour la centrer dans le header -160px pour tirer sur le papier peint(background) */
+    background-size: cover; 
+    position: relative;
+    
+    color: white;
+}
+.wrapper{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid firebrick;
+}
+
+/* Nav */
+nav{
+    border: 2px solid forestgreen;
+    background-color: rgba(0,0 ,0, .5);
+    line-height: 5em;
+    position: fixed;
+    width: 100%;
+    /* je reprecise une largeur a 100% car sinon la position fixe enleve la width 100% a la nav */
+    top: 0;
+    left: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid pink;
+}
+nav li{
+    border: 2px solid gold;
+}
+/* contenu de header */
+.logo{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+header .bandeau{
+    border: 1px blue solid;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* la position absolute pour passer le bandeau par dessus le header */
+}
+
+/* layout (fondations)*/
+header{
+    background: url(img/dinosaure.jpg)no-repeat 50% -160px;
+    /* 50% pour la centrer dans le header -160px pour tirer sur le papier peint(background) */
+    background-size: cover; 
+    position: relative;
+    height: 800px; /* temporaire */
+    color: white;
+}
+.wrapper{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid firebrick;
+}
+footer{
+    background: black;
+    
+}
+/* CONTENU DE MAIN */
+main section{
+    padding-top: 5rem;
+    border: 2px solid violet;
+    margin: 0 auto;
+}
+section.presentation{
+    width: 60%;
+}
+.titre_n2{
+    text-align: center;
+}
+img.entree_parc{
+    width: 100%;
+}
+
+
+iframe{
+    width: 100%;
+}
+.partenaires img{
+    width: 80px;
+}
+/* contenu de footer */
+footer > .wrapper{
+    padding-top: 10rem;
+}

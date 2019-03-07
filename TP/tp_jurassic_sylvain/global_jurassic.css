@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.4rem/1.5 arial, helvetica, sans-serif;
+    margin: 0;
+}
+.list_unstyled{
+    padding-left: 0;
+    list-style: none;
+}
+
+/* layout (fondations)*/
+header{
+    background: url(img/dinosaure.jpg)no-repeat 50% -160px;
+    /* 50% pour la centrer dans le header -160px pour tirer sur le papier peint(background) */
+    background-size: cover; 
+    position: relative;
+    height: 800px; /* temporaire */
+    color: white;
+}
+.wrapper{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid firebrick;
+}
+footer{
+    background: black;
+    
+    height: 200px;
+}
+
+/* Nav */
+nav{
+    border: 2px solid forestgreen;
+    background-color: rgba(0,0 ,0, .5);
+    line-height: 5em;
+    position: fixed;
+    width: 100%;
+    /* je reprecise une largeur a 100% car sinon la position fixe enleve la width 100% a la nav */
+    top: 0;
+    left: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid pink;
+}
+nav li{
+    border: 2px solid gold;
+}
+
+/* contenu de header */
+.logo{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+header .bandeau{
+    border: 1px blue solid;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* la position absolute pour passer le bandeau par dessus le header */
+}
+
+/* CONTENU DE MAIN */
+main section{
+    padding-top: 5rem;
+    border: 2px solid violet;
+    margin: 0 auto;
+}
+section.presentation{
+    width: 60%;
+}
+.titre_n2{
+    text-align: center;
+}
+img.entree_parc{
+    width: 100%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    border: 1px green solid;
+    width: 50%;
+}
+iframe{
+    width: 100%;
+}
+
+/* BOITE A OUTIL */
+.txt_center{
+    text-align: center;
+}
+.btn{
+    padding: 1rem 2rem;
+    border:none;
+}
+.btn-primary{
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+}

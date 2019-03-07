@@ -54,7 +54,8 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50% -50%);
+            transform: translate(-50%, -50%);
+            /* transform: translate a ces valeurs centre l'objet dans son parent */
         }
     
     </style>
@@ -103,15 +104,23 @@
             console.log('jquery est bien chargé');
 
             //
-            $('#monForm').on('submit', function (ev){
+            $('#monForm').on('submit', function(ev){
                 ev.preventDefault();//stopper la redirection du formulaire
                 //on créé une balise '<p>' par input qu'on ajoutera dans le body
-            var nomComplet = $('#nomComplet').val();
-            $(this).replacewith(
+            var nomComplet = $('#nomComplet').val();//on recupere les informations dans des variables
+            var email = $('#email').val();
+            var tel = $('#tel').val();
+            var sujet = $('#sujet').val();
+            var message = $('#message').val();
+            $(this).replaceWith(
                 //attention on a des apapostrophes inversées (altGr + 7)
                 `
                 <p class="feedback">
-                    Bonjour <strong>$ {nomComplet} </strong>
+                    Bonjour <strong> ${nomComplet} </strong> <br>
+                    <em> ${email} </em> <br>
+                    Vous nous avez contacté au sujet de <strong> ${sujet}  </strong> <br>
+                    Nous vous recontacterons prochainement au <strong> ${tel}</strong> <br>
+                    votre message est :<strong> ${message} </strong> <br>
                 </p>
                 
                 `
