@@ -96,6 +96,24 @@
                 $('<p>').append('votre sexe est: ' + $(':radio:checked').val()).appendTo('.info');
                 $('<p>').append('votre statut est: ' + $('#statut').val()).appendTo('.info');
                 $('<p>').append('votre choix de couleur est: ' + $(':checkbox:checked').val()).appendTo('.info'); 
+
+                    //4 - affiche la couleur qui a été cochée 
+
+                    function couleurs(){
+                        var couleurs = [];
+                    return function(){
+                        $("input[type='checkbox']:checked").each(
+                            function (){
+                                couleurs.push(' ' + $(this).attr('id'));
+                                console.log(couleurs);
+                            }           
+                        )//fin du each
+                        $('<p>').append('tu as choisi les couleurs suivantes :'+ (couleurs)).appendTo('info');
+                                     }    
+                    }
+                    var ajoutCouleurs = couleurs();
+                    ajoutCouleurs();
+
                 
 
             })//fin de l'evenement submit

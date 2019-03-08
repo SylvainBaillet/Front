@@ -1,0 +1,53 @@
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.4rem/1.5 arial, helvetica, sans-serif;
+    margin: 0;
+}
+.container-fluid{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 98%;
+}
+/* CONTENU HEADER */
+img.voitureHead{
+    position: relative;
+    width: 100%;
+}
+.navbar{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.titreHead{
+    position: absolute;
+    margin: 0 auto;
+    width: 40%;
+    color: azure;
+    text-align: center;
+    z-index: 1;
+}
+/* CONTENU MAIN */
+.container{
+    margin: 0 auto;
+}
+section{
+    padding: 1rem;
+}
+#section_1{
+    display:flex;
+    justify-content: space-between;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:black;
+}
